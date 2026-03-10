@@ -1,0 +1,21 @@
+{
+  "Topbar": {
+    "brand": "Klein Ockenburgh",
+    "home": "Home",
+    "area": "Area",
+    "reservation": "Reservation",
+    "menuToggle": "Toggle menu",
+    "languageLabel": "Language"
+  },
+  "HomePage": {
+    "heroTitle": "Bed & Breakfast Klein Ockenburgh",
+    "ctaPrimary": "Make reservation",
+    "ctaDiscoverRoom": "Discover the room"
+  },
+  "AreaSection": {
+    "title": "Around the B&B",
+    "intro": "Discover activities, nature and local spots within easy reach of the B&B.",
+    "empty": "Add places in the translations to populate this overview.",
+    "places": []
+  }
+}

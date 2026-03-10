@@ -1,0 +1,75 @@
+{
+  "Topbar": {
+    "brand": "Klein Ockenburgh",
+    "home": "Start",
+    "area": "Omgeving",
+    "reservation": "Reserveren",
+    "menuToggle": "Menu openen of sluiten",
+    "languageLabel": "Taal"
+  },
+  "HomePage": {
+    "heroTitle": "Bed & Breakfast Klein Ockenburgh",
+    "ctaPrimary": "Reserveren",
+    "ctaDiscoverRoom": "Ontdek de kamer"
+  },
+  "AreaSection": {
+    "title": "Omgeving en bereikbaarheid",
+    "intro": "Onze B&B ligt op een rustige en gunstige locatie in Den Haag. Strand, natuur en het centrum zijn eenvoudig bereikbaar met de fiets, auto of het openbaar vervoer.",
+    "empty": "Er zijn op dit moment nog geen locaties beschikbaar.",
+    "accessibility": {
+      "title": "Bereikbaarheid & parkeren",
+      "paragraphs": [
+        "Onze B&B is goed bereikbaar met zowel de auto als het openbaar vervoer. Voor de B&B hebben wij parkeergelegenheid op eigen terrein, waar u gratis kunt parkeren. Daarnaast is er de mogelijkheid om fietsen veilig bij ons te stallen.",
+        "Wilt u de omgeving per fiets verkennen? Dan kunt u eenvoudig fietsen huren bij Orie Rijwielen (op 500 meter van onze B&B). Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
+        "Wij denken graag met u mee en geven met plezier tips over mooie routes en handige verbindingen in de omgeving."
+      ],
+      "linkLabel": "Fietsverhuur bij Orie Rijwielen",
+      "linkHref": "mailto:verhuur@orierijwielen.nl"
+    },
+    "places": [
+      {
+        "name": "Centrum van Den Haag",
+        "category": "Stad & cultuur",
+        "imageSrc": "/room10.jpg",
+        "description": "Perfect voor shoppen, musea, historische gebouwen en gezellige pleinen. In het centrum vindt u onder andere het Binnenhof en diverse bekende bezienswaardigheden.",
+        "linkLabel": "Top 10 highlights in Den Haag",
+        "linkHref": "https://denhaag.com/nl/tips/top-10-highlights-in-den-haag"
+      },
+      {
+        "name": "Kijkduin",
+        "category": "Strand & ontspanning",
+        "imageSrc": "/room11.jpg",
+        "distance": "Loop- en fietsafstand",
+        "description": "Binnen enkele minuten fietsen staat u op het strand. Kijkduin staat bekend om rustige stranden en gezellige strandpaviljoens."
+      },
+      {
+        "name": "Scheveningen",
+        "category": "Strand & uitgaan",
+        "imageSrc": "/room12.jpg",
+        "description": "Eenvoudig bereikbaar met het openbaar vervoer of de fiets. Hier vindt u onder andere het Circustheater en de iconische Pier. In het hoogseizoen raden wij de auto af vanwege drukte en beperkt parkeren."
+      },
+      {
+        "name": "Landgoed Ockenburgh",
+        "category": "Natuur",
+        "imageSrc": "/room13.jpg",
+        "distance": "Loopafstand",
+        "description": "Een prachtig groen gebied met bossen en wandelpaden, ideaal voor een rustige wandeling. Op het landgoed vindt u een restaurant en café, en er wordt regelmatig live muziek georganiseerd."
+      },
+      {
+        "name": "Delft",
+        "category": "Historische stad",
+        "imageSrc": "/room14.jpg",
+        "distance": "Ca. 1 uur met OV",
+        "description": "Delft staat bekend om charmante grachten, een sfeervol historisch centrum en een rijke culturele geschiedenis. Ook goed bereikbaar met fiets en auto.",
+        "linkLabel": "Wat is er te doen in Delft?",
+        "linkHref": "https://www.indelft.nl/nl"
+      },
+      {
+        "name": "Fietsroutes",
+        "category": "Actief",
+        "imageSrc": "/room15.jpg",
+        "description": "In de directe omgeving sluiten meerdere fietsknooppunten aan op het landelijke netwerk, waaronder 21, 22 en 23 richting Kijkduin en de duinen, en 17 en 18 richting het Westland en de zuidelijke kustroute. Vanuit hier fietst u eenvoudig naar onder andere Westduinpark, Westland, Hoek van Holland of Meijendel."
+      }
+    ]
+  }
+}
