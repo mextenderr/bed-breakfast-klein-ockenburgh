@@ -30,7 +30,7 @@
       {
         "name": "Centrum van Den Haag",
         "category": "Stad & cultuur",
-        "imageSrc": "/room10.jpg",
+        "imageSrc": "/den-haag-hofvijver.jpg",
         "description": "Perfect voor shoppen, musea, historische gebouwen en gezellige pleinen. In het centrum vindt u onder andere het Binnenhof en diverse bekende bezienswaardigheden.",
         "linkLabel": "Top 10 highlights in Den Haag",
         "linkHref": "https://denhaag.com/nl/tips/top-10-highlights-in-den-haag"
@@ -38,36 +38,27 @@
       {
         "name": "Kijkduin",
         "category": "Strand & ontspanning",
-        "imageSrc": "/room11.jpg",
+        "imageSrc": "/kijkduin.jpg",
         "distance": "Loop- en fietsafstand",
         "description": "Binnen enkele minuten fietsen staat u op het strand. Kijkduin staat bekend om rustige stranden en gezellige strandpaviljoens."
       },
       {
         "name": "Scheveningen",
         "category": "Strand & uitgaan",
-        "imageSrc": "/room12.jpg",
+        "imageSrc": "/scheveningen.jpg",
         "description": "Eenvoudig bereikbaar met het openbaar vervoer of de fiets. Hier vindt u onder andere het Circustheater en de iconische Pier. In het hoogseizoen raden wij de auto af vanwege drukte en beperkt parkeren."
       },
       {
         "name": "Landgoed Ockenburgh",
         "category": "Natuur",
-        "imageSrc": "/room13.jpg",
+        "imageSrc": "/landgoed-ockenburgh.jpeg",
         "distance": "Loopafstand",
         "description": "Een prachtig groen gebied met bossen en wandelpaden, ideaal voor een rustige wandeling. Op het landgoed vindt u een restaurant en café, en er wordt regelmatig live muziek georganiseerd."
       },
       {
-        "name": "Delft",
-        "category": "Historische stad",
-        "imageSrc": "/room14.jpg",
-        "distance": "Ca. 1 uur met OV",
-        "description": "Delft staat bekend om charmante grachten, een sfeervol historisch centrum en een rijke culturele geschiedenis. Ook goed bereikbaar met fiets en auto.",
-        "linkLabel": "Wat is er te doen in Delft?",
-        "linkHref": "https://www.indelft.nl/nl"
-      },
-      {
         "name": "Fietsroutes",
         "category": "Actief",
-        "imageSrc": "/room15.jpg",
+        "imageSrc": "/duinen.jpg",
         "description": "In de directe omgeving sluiten meerdere fietsknooppunten aan op het landelijke netwerk, waaronder 21, 22 en 23 richting Kijkduin en de duinen, en 17 en 18 richting het Westland en de zuidelijke kustroute. Vanuit hier fietst u eenvoudig naar onder andere Westduinpark, Westland, Hoek van Holland of Meijendel."
       }
     ]
