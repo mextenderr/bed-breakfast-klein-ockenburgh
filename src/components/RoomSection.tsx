@@ -2,11 +2,20 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useMessages, useTranslations } from "next-intl";
+import {
+  BedDouble,
+  DoorOpen,
+  MonitorPlay,
+  Wifi,
+  Bath,
+  Snowflake,
+  House,
+} from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 const roomImages = Array.from({ length: 16 }, (_, index) => ({
   src: `/room${index + 1}.jpg`,
-  alt: `Room photo ${index + 1}`,
 }));
 
 type RoomImageLayout = {
@@ -24,7 +33,25 @@ const roomImageLayoutMap: Record<string, RoomImageLayout> = {
 
 const MOBILE_BATCH_SIZE = 4;
 
+type RoomMessages = {
+  RoomSection?: {
+    highlights?: string[];
+  };
+};
+
+const roomHighlightIcons = [
+  BedDouble,
+  Bath,
+  Snowflake,
+  House,
+  DoorOpen,
+  Wifi,
+  MonitorPlay,
+];
+
 export default function RoomSection() {
+  const t = useTranslations("RoomSection");
+  const messages = useMessages() as RoomMessages;
   const [isMobile, setIsMobile] = useState(() =>
     typeof window !== "undefined" ? window.innerWidth < 640 : false,
   );
@@ -53,6 +80,9 @@ export default function RoomSection() {
     : roomImages;
   const hasMoreMobileImages =
     isMobile && mobileVisibleCount < roomImages.length;
+  const highlights = Array.isArray(messages.RoomSection?.highlights)
+    ? messages.RoomSection.highlights
+    : [];
 
   const showMoreMobileImages = () => {
     setMobileVisibleCount((current) =>
@@ -65,14 +95,35 @@ export default function RoomSection() {
       id="room"
       className="scroll-mt-24 bg-night-forest text-candlelight"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 pt-14 sm:px-6 md:pt-16">
+      <div className="mx-auto w-full max-w-7xl px-4 pt-14 sm:px-6 md:pt-24">
         <Reveal className="mb-6 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Room
+            {t("title")}
           </h2>
-          <p className="mt-3 text-base text-candlelight/80">
-            Bekijk alle foto&apos;s van de kamer en sfeer van het verblijf.
-          </p>
+          <p className="mt-3 text-base text-candlelight/80">{t("intro")}</p>
+        </Reveal>
+
+        <Reveal delayMs={60} className="my-16">
+          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            {highlights.map((label, index) => {
+              const Icon = roomHighlightIcons[index];
+              if (!Icon) return null;
+
+              return (
+                <div
+                  key={`${label}-${index}`}
+                  className="flex items-center gap-3 rounded-3xl border border-forest-green/35 bg-midnight-grove/55 px-4 py-4 shadow-[0_14px_30px_rgba(0,0,0,0.12)] backdrop-blur-sm"
+                >
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-forest-green/18 text-aged-parchment">
+                    <Icon className="size-4" />
+                  </div>
+                  <p className="text-sm leading-relaxed text-candlelight/88">
+                    {label}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </Reveal>
       </div>
 
@@ -99,7 +150,7 @@ export default function RoomSection() {
                 >
                   <Image
                     src={image.src}
-                    alt={image.alt}
+                    alt={t("imageAlt", { index: index + 1 })}
                     fill
                     sizes="(min-width: 1280px) 23vw, (min-width: 1024px) 31vw, (min-width: 640px) 48vw, 100vw"
                     className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -116,7 +167,7 @@ export default function RoomSection() {
             onClick={showMoreMobileImages}
             className="mt-5 text-sm font-medium text-aged-parchment underline decoration-forest-green underline-offset-4 transition-colors hover:text-candlelight sm:hidden"
           >
-            show more
+            {t("showMore")}
           </button>
         ) : null}
       </div>

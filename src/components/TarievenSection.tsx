@@ -1,45 +1,66 @@
+import { useMessages, useTranslations } from "next-intl";
 import Reveal from "@/components/Reveal";
 
+type RateRow = {
+  label: string;
+  price: string;
+};
+
+type TarievenMessages = {
+  TarievenSection?: {
+    rates?: RateRow[];
+    conditions?: string[];
+  };
+};
+
 export default function TarievenSection() {
+  const t = useTranslations("TarievenSection");
+  const messages = useMessages() as TarievenMessages;
+  const rates = Array.isArray(messages.TarievenSection?.rates)
+    ? messages.TarievenSection.rates
+    : [];
+  const conditions = Array.isArray(messages.TarievenSection?.conditions)
+    ? messages.TarievenSection.conditions
+    : [];
+
   return (
     <section
       id="tarieven"
-      className="scroll-mt-24 bg-midnight-grove text-candlelight"
+      className="scroll-mt-24 pt-40 bg-midnight-grove text-candlelight"
     >
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-14">
         <Reveal className="mb-8 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Tarieven
+            {t("title")}
           </h2>
-          <p className="mt-3 text-base text-candlelight/80">
-            Overzicht van kamerprijzen en verblijfsvoorwaarden.
-          </p>
+          <p className="mt-3 text-base text-candlelight/80">{t("intro")}</p>
         </Reveal>
 
         <div className="grid gap-5 md:grid-cols-2">
           <Reveal className="rounded-lg border border-forest-green/40 bg-night-forest/45 p-6">
             <h3 className="text-xl font-semibold text-aged-parchment">
-              Seizoensprijzen
+              {t("ratesTitle")}
             </h3>
             <dl className="mt-4 space-y-4 text-sm">
-              <div className="flex items-start justify-between gap-4 border-b border-forest-green/25 pb-3">
-                <dt className="font-medium">
-                  Laag seizoen (november t/m maart)
-                </dt>
-                <dd className="shrink-0 font-semibold">EUR 125,00 / nacht</dd>
-              </div>
-              <div className="flex items-start justify-between gap-4">
-                <dt className="font-medium">
-                  Hoog seizoen (april t/m oktober)
-                </dt>
-                <dd className="shrink-0 font-semibold">EUR 145,00 / nacht</dd>
-              </div>
+              {rates.map((rate, index) => (
+                <div
+                  key={`${rate.label}-${rate.price}`}
+                  className={`flex items-start justify-between gap-4 ${
+                    index < rates.length - 1
+                      ? "border-b border-forest-green/25 pb-3"
+                      : ""
+                  }`}
+                >
+                  <dt className="font-medium">{rate.label}</dt>
+                  <dd className="shrink-0 font-semibold">{rate.price}</dd>
+                </div>
+              ))}
             </dl>
             <p className="mt-4 text-sm text-candlelight/80">
-              Prijzen gelden voor 2 personen en zijn inclusief gratis ontbijt.
+              {t("ratesFootnotePrimary")}
             </p>
             <p className="mt-2 text-sm text-candlelight/80">
-              Bij boeking voor 1 persoon geldt EUR 15,00 korting per nacht.
+              {t("ratesFootnoteSecondary")}
             </p>
           </Reveal>
 
@@ -48,20 +69,12 @@ export default function TarievenSection() {
             className="rounded-lg border border-forest-green/40 bg-night-forest/45 p-6"
           >
             <h3 className="text-xl font-semibold text-aged-parchment">
-              Voorwaarden
+              {t("conditionsTitle")}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-candlelight/85">
-              <li>1 kamer beschikbaar voor maximaal 2 personen.</li>
-              <li>Rookvrij verblijf.</li>
-              <li>Huisdieren zijn niet toegestaan.</li>
-              <li>Prijzen zijn inclusief BTW.</li>
-              <li>
-                Toeristenbelasting: EUR 6,20 per persoon per nacht (exclusief).
-              </li>
-              <li>
-                Annuleren tot 1 week voor boeking: 50% terugbetaling. Daarna:
-                0% terugbetaling.
-              </li>
+              {conditions.map((condition) => (
+                <li key={condition}>{condition}</li>
+              ))}
             </ul>
           </Reveal>
         </div>

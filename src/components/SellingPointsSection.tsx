@@ -1,31 +1,33 @@
+import { useMessages } from "next-intl";
 import { BedDouble, Coffee, MapPin } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
-const sellingPoints = [
-  {
-    title: "Prachtige locatie",
-    description: "Rustig gelegen vlak bij strand, stad en groen.",
-    icon: MapPin,
-  },
-  {
-    title: "Inclusief ontbijt",
-    description: "Elke ochtend een vers en uitgebreid ontbijt.",
-    icon: Coffee,
-  },
-  {
-    title: "1 kamer",
-    description: "Persoonlijke aandacht in een kleinschalige setting.",
-    icon: BedDouble,
-  },
-];
+type SellingPoint = {
+  title: string;
+  description: string;
+};
+
+type SellingPointsMessages = {
+  SellingPointsSection?: {
+    items?: SellingPoint[];
+  };
+};
+
+const sellingPointIcons = [MapPin, Coffee, BedDouble];
 
 export default function SellingPointsSection() {
+  const messages = useMessages() as SellingPointsMessages;
+  const sellingPoints = Array.isArray(messages.SellingPointsSection?.items)
+    ? messages.SellingPointsSection.items
+    : [];
+
   return (
     <section id="selling-points" className="bg-candlelight text-night-forest">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 border-x border-forest-green/40">
         <div className="grid md:grid-cols-3 md:divide-x md:divide-forest-green/40">
           {sellingPoints.map((point, index) => {
-            const Icon = point.icon;
+            const Icon = sellingPointIcons[index];
+            if (!Icon) return null;
 
             return (
               <Reveal

@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import Reveal from "@/components/Reveal";
 
 export default function AboutSection() {
+  const t = useTranslations("AboutSection");
+
   return (
     <section
       id="about"
@@ -12,7 +15,7 @@ export default function AboutSection() {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
             <Image
               src="/samen.jpg"
-              alt="About section"
+              alt={t("imageAlt")}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="h-full w-full object-cover object-center"
@@ -22,15 +25,12 @@ export default function AboutSection() {
 
         <Reveal delayMs={90}>
           <div>
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            About
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-night-forest/80">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              {t("title")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-night-forest/80">
+              {t("body")}
+            </p>
           </div>
         </Reveal>
       </div>

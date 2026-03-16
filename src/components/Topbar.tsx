@@ -5,8 +5,12 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { getPathname, usePathname } from "@/i18n/navigation";
 
-const HEADER_OFFSET = 88;
 const SUPPORTED_LOCALES = ["nl-NL", "en-GB"] as const;
+
+function getHeaderOffset() {
+  const topbar = document.querySelector<HTMLElement>("[data-topbar]");
+  return topbar ? topbar.getBoundingClientRect().bottom + 8 : 72;
+}
 
 export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +21,10 @@ export default function Topbar() {
 
   const navItems = [
     { label: t("home"), targetId: "hero" },
+    { label: t("about"), targetId: "about" },
+    { label: t("room"), targetId: "room" },
     { label: t("area"), targetId: "area" },
+    { label: t("rates"), targetId: "tarieven" },
     { label: t("reservation"), targetId: "reservation" },
   ];
 
@@ -25,8 +32,7 @@ export default function Topbar() {
     const section = document.getElementById(targetId);
     if (!section) return;
 
-    const topPosition =
-      section.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+    const topPosition = section.getBoundingClientRect().top + window.scrollY;
 
     window.scrollTo({
       top: Math.max(0, topPosition),
@@ -59,10 +65,11 @@ export default function Topbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 text-aged-parchment">
       <div
+        data-topbar
         className={`mx-auto flex w-full max-w-7xl items-center justify-between px-4 transition-all duration-400 sm:px-6 ${
           isScrolled
             ? "mt-2 h-16 rounded-xl border border-forest-green/60 bg-night-forest/80 shadow-lg shadow-black/25 backdrop-blur-md"
-            : "h-20 border-b border-border/80 bg-black/30 backdrop-blur-sm"
+            : "h-20 bg-black/30 backdrop-blur-sm"
         }`}
       >
         <button
@@ -90,7 +97,7 @@ export default function Topbar() {
                 key={item.targetId}
                 type="button"
                 onClick={() => scrollToSection(item.targetId)}
-                className="text-sm font-medium transition-opacity hover:opacity-80"
+                className="text-sm font-medium transition-opacity hover:opacity-80 hover:cursor-pointer"
               >
                 {item.label}
               </button>

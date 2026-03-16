@@ -2,15 +2,60 @@
   "Topbar": {
     "brand": "Klein Ockenburgh",
     "home": "Start",
+    "about": "Over ons",
+    "room": "Kamer",
     "area": "Omgeving",
+    "rates": "Tarieven",
     "reservation": "Reserveren",
     "menuToggle": "Menu openen of sluiten",
     "languageLabel": "Taal"
   },
+  "Carousel": {
+    "previousSlide": "Vorige dia",
+    "nextSlide": "Volgende dia"
+  },
   "HomePage": {
-    "heroTitle": "Bed & Breakfast Klein Ockenburgh",
-    "ctaPrimary": "Reserveren",
-    "ctaDiscoverRoom": "Ontdek de kamer"
+    "eyebrow": "Bed & Breakfast",
+    "heroTitle": "Klein Ockenburgh",
+    "ctaPrimary": "Reserveer je verblijf",
+    "ctaSecondary": "Ontdek de kamer",
+    "scrollIndicator": "Scroll"
+  },
+  "SellingPointsSection": {
+    "items": [
+      {
+        "title": "Prachtige locatie",
+        "description": "Rustig gelegen vlak bij strand, stad en groen."
+      },
+      {
+        "title": "Inclusief ontbijt",
+        "description": "Elke ochtend een vers en uitgebreid ontbijt."
+      },
+      {
+        "title": "1 kamer",
+        "description": "Persoonlijke aandacht in een kleinschalige setting."
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "Over ons",
+    "body": "Bed & Breakfast Klein Ockenburgh biedt een rustige en persoonlijke overnachting in Den Haag. Je verblijft in een comfortabele kamer op de begane grond met een eigen entree, terwijl strand, duinen en de stad allemaal dichtbij zijn.",
+    "imageAlt": "De hosts van Bed & Breakfast Klein Ockenburgh"
+  },
+  "RoomSection": {
+    "title": "Kamer",
+    "intro": "Bekijk alle foto's van de kamer en proef de sfeer van het verblijf.",
+    "showMore": "Toon meer",
+    "imageAlt": "Foto van de kamer {index}",
+    "highlights": [
+      "20 m²",
+      "Privébadkamer",
+      "Airconditioning",
+      "Gelegen op de begane grond",
+      "Eigen entree",
+      "Gratis wifi",
+      "TV met streamingsdiensten"
+    ]
   },
   "AreaSection": {
     "title": "Omgeving en bereikbaarheid",
@@ -20,7 +65,7 @@
       "title": "Bereikbaarheid & parkeren",
       "paragraphs": [
         "Onze B&B is goed bereikbaar met zowel de auto als het openbaar vervoer. Voor de B&B hebben wij parkeergelegenheid op eigen terrein, waar u gratis kunt parkeren. Daarnaast is er de mogelijkheid om fietsen veilig bij ons te stallen.",
-        "Wilt u de omgeving per fiets verkennen? Dan kunt u eenvoudig fietsen huren bij Orie Rijwielen (op 500 meter van onze B&B). Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
+        "Wilt u de omgeving per fiets verkennen? Dan kunt u eenvoudig fietsen huren bij Orie Rijwielen op 500 meter van onze B&B. Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
         "Wij denken graag met u mee en geven met plezier tips over mooie routes en handige verbindingen in de omgeving."
       ],
       "linkLabel": "Fietsverhuur bij Orie Rijwielen",
@@ -62,5 +107,47 @@
         "description": "In de directe omgeving sluiten meerdere fietsknooppunten aan op het landelijke netwerk, waaronder 21, 22 en 23 richting Kijkduin en de duinen, en 17 en 18 richting het Westland en de zuidelijke kustroute. Vanuit hier fietst u eenvoudig naar onder andere Westduinpark, Westland, Hoek van Holland of Meijendel."
       }
     ]
+  },
+  "TarievenSection": {
+    "title": "Tarieven",
+    "intro": "Overzicht van kamerprijzen en verblijfsvoorwaarden.",
+    "ratesTitle": "Seizoensprijzen",
+    "ratesFootnotePrimary": "Prijzen gelden voor 2 personen en zijn inclusief gratis ontbijt.",
+    "ratesFootnoteSecondary": "Bij boeking voor 1 persoon geldt EUR 15,00 korting per nacht.",
+    "conditionsTitle": "Voorwaarden",
+    "rates": [
+      {
+        "label": "Laag seizoen (november t/m maart)",
+        "price": "EUR 125,00 / nacht"
+      },
+      {
+        "label": "Hoog seizoen (april t/m oktober)",
+        "price": "EUR 145,00 / nacht"
+      }
+    ],
+    "conditions": [
+      "1 kamer beschikbaar voor maximaal 2 personen.",
+      "Rookvrij verblijf.",
+      "Huisdieren zijn niet toegestaan.",
+      "Prijzen zijn inclusief btw.",
+      "Toeristenbelasting: EUR 6,20 per persoon per nacht (exclusief).",
+      "Annuleren tot 1 week voor boeking: 50% terugbetaling. Daarna: 0% terugbetaling."
+    ]
+  },
+  "GoogleMapsSection": {
+    "title": "Locatie",
+    "intro": "Bekijk de locatie van Bed & Breakfast Klein Ockenburgh op de kaart.",
+    "iframeTitle": "Google Maps-locatie"
+  },
+  "ReservationSection": {
+    "title": "Reserveren",
+    "intro": "Controleer direct de beschikbaarheid en reserveer eenvoudig je verblijf bij Bed & Breakfast Klein Ockenburgh.",
+    "providerLogoAlt": "Bedandbreakfast.nl",
+    "eyebrow": "Aangesloten bij",
+    "providerTitle": "Wij staan ook op Bedandbreakfast.nl",
+    "providerDescription": "Onze accommodatie is ook te vinden op Bedandbreakfast.nl. Daar kun je onze vermelding bekijken en desgewenst direct via het platform reserveren.",
+    "providerConfirmation": "Bekijk onze openbare Bedandbreakfast.nl-pagina voor extra informatie en beschikbaarheid.",
+    "providerLink": "Bekijk onze vermelding op Bedandbreakfast.nl",
+    "iframeTitle": "Reserveringsmodule"
   }
 }

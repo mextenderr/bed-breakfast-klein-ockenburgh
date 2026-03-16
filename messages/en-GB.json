@@ -2,20 +2,152 @@
   "Topbar": {
     "brand": "Klein Ockenburgh",
     "home": "Home",
+    "about": "About",
+    "room": "Room",
     "area": "Area",
+    "rates": "Rates",
     "reservation": "Reservation",
     "menuToggle": "Toggle menu",
     "languageLabel": "Language"
   },
+  "Carousel": {
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide"
+  },
   "HomePage": {
-    "heroTitle": "Bed & Breakfast Klein Ockenburgh",
-    "ctaPrimary": "Make reservation",
-    "ctaDiscoverRoom": "Discover the room"
+    "eyebrow": "Bed & Breakfast",
+    "heroTitle": "Klein Ockenburgh",
+    "ctaPrimary": "Reserve your stay",
+    "ctaSecondary": "Discover the room",
+    "scrollIndicator": "Scroll"
+  },
+  "SellingPointsSection": {
+    "items": [
+      {
+        "title": "Beautiful location",
+        "description": "Quietly situated near the beach, the city and green surroundings."
+      },
+      {
+        "title": "Breakfast included",
+        "description": "A fresh and generous breakfast every morning."
+      },
+      {
+        "title": "One room only",
+        "description": "Personal attention in a small-scale setting."
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About us",
+    "body": "Bed & Breakfast Klein Ockenburgh offers a quiet and personal stay in The Hague. You stay in a comfortable ground-floor room with a private entrance, while the beach, dunes and city are all within easy reach.",
+    "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh"
+  },
+  "RoomSection": {
+    "title": "Room",
+    "intro": "Browse the room photos and get a feel for your stay.",
+    "showMore": "Show more",
+    "imageAlt": "Room photo {index}",
+    "highlights": [
+      "20 m²",
+      "Private bathroom",
+      "Air conditioning",
+      "Entirely on the ground floor",
+      "Private entrance",
+      "Free Wi-Fi",
+      "TV with streaming services"
+    ]
   },
   "AreaSection": {
     "title": "Around the B&B",
-    "intro": "Discover activities, nature and local spots within easy reach of the B&B.",
+    "intro": "Our B&B is in a quiet and convenient part of The Hague. The beach, nature and the city centre are easy to reach by bike, car or public transport.",
     "empty": "Add places in the translations to populate this overview.",
-    "places": []
+    "accessibility": {
+      "title": "Getting here & parking",
+      "paragraphs": [
+        "Our B&B is easy to reach both by car and by public transport. We offer free parking on our own property right in front of the B&B. There is also secure space to store bicycles.",
+        "Would you like to explore the area by bike? You can easily rent bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
+        "We are happy to help with practical advice and tips for scenic routes and useful local connections."
+      ],
+      "linkLabel": "Bike rental at Orie Rijwielen",
+      "linkHref": "mailto:verhuur@orierijwielen.nl"
+    },
+    "places": [
+      {
+        "name": "The Hague city centre",
+        "category": "City & culture",
+        "imageSrc": "/den-haag-hofvijver.jpg",
+        "description": "Ideal for shopping, museums, historic buildings and lively squares. The city centre includes the Binnenhof and many of The Hague's best-known sights.",
+        "linkLabel": "Top 10 highlights in The Hague",
+        "linkHref": "https://denhaag.com/en/tips/top-10-highlights-in-the-hague"
+      },
+      {
+        "name": "Kijkduin",
+        "category": "Beach & relaxation",
+        "imageSrc": "/kijkduin.jpg",
+        "distance": "Walking and cycling distance",
+        "description": "You can be on the beach within minutes by bike. Kijkduin is known for its quieter beaches and welcoming beach pavilions."
+      },
+      {
+        "name": "Scheveningen",
+        "category": "Beach & nightlife",
+        "imageSrc": "/scheveningen.jpg",
+        "description": "Easy to reach by public transport or bicycle. Here you will find the Circustheater and the iconic Pier, among other attractions. In high season we advise against coming by car because of crowds and limited parking."
+      },
+      {
+        "name": "Ockenburgh estate",
+        "category": "Nature",
+        "imageSrc": "/landgoed-ockenburgh.jpeg",
+        "distance": "Walking distance",
+        "description": "A beautiful green estate with woodland and walking paths, ideal for a relaxing walk. The estate has a restaurant and cafe, and live music is organised regularly."
+      },
+      {
+        "name": "Cycling routes",
+        "category": "Active",
+        "imageSrc": "/duinen.jpg",
+        "description": "Several cycling junction routes connect to the national network nearby, including 21, 22 and 23 towards Kijkduin and the dunes, and 17 and 18 towards Westland and the southern coastal route. From here you can easily cycle to Westduinpark, Westland, Hoek van Holland or Meijendel."
+      }
+    ]
+  },
+  "TarievenSection": {
+    "title": "Rates",
+    "intro": "Overview of room prices and stay conditions.",
+    "ratesTitle": "Seasonal rates",
+    "ratesFootnotePrimary": "Rates apply to 2 guests and include breakfast.",
+    "ratesFootnoteSecondary": "Bookings for 1 guest receive a discount of EUR 15.00 per night.",
+    "conditionsTitle": "Conditions",
+    "rates": [
+      {
+        "label": "Low season (November through March)",
+        "price": "EUR 125.00 / night"
+      },
+      {
+        "label": "High season (April through October)",
+        "price": "EUR 145.00 / night"
+      }
+    ],
+    "conditions": [
+      "1 room available for a maximum of 2 guests.",
+      "Non-smoking accommodation.",
+      "Pets are not allowed.",
+      "Prices include VAT.",
+      "Tourist tax: EUR 6.20 per person per night (excluded).",
+      "Cancellation up to 1 week before arrival: 50% refund. After that: 0% refund."
+    ]
+  },
+  "GoogleMapsSection": {
+    "title": "Location",
+    "intro": "View Bed & Breakfast Klein Ockenburgh on the map.",
+    "iframeTitle": "Google Maps location"
+  },
+  "ReservationSection": {
+    "title": "Reservation",
+    "intro": "Check availability directly and book your stay at Bed & Breakfast Klein Ockenburgh with ease.",
+    "providerLogoAlt": "Bedandbreakfast.nl",
+    "eyebrow": "Listed with",
+    "providerTitle": "We are also listed on Bedandbreakfast.nl",
+    "providerDescription": "Our accommodation can also be found on Bedandbreakfast.nl. You can view our listing there and, if you prefer, book directly through the platform.",
+    "providerConfirmation": "View our public Bedandbreakfast.nl page for extra details and availability.",
+    "providerLink": "View our listing on Bedandbreakfast.nl",
+    "iframeTitle": "Reservation module"
   }
 }

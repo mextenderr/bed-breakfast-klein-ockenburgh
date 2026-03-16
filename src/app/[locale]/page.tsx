@@ -1,9 +1,9 @@
 import AreaSection from "@/components/AreaSection";
 import AboutSection from "@/components/AboutSection";
+import FooterSection from "@/components/FooterSection";
 import RoomSection from "@/components/RoomSection";
-import ReservationModule from "@/components/ReservationModule";
+import ReservationSection from "@/components/ReservationSection";
 import SellingPointsSection from "@/components/SellingPointsSection";
-import GoogleMapsSection from "@/components/GoogleMapsSection";
 import TarievenSection from "@/components/TarievenSection";
 import HeroHeader from "@/components/HeroHeader";
 import Topbar from "@/components/Topbar";
@@ -18,14 +18,8 @@ export default function Home() {
       <RoomSection />
       <AreaSection />
       <TarievenSection />
-      <GoogleMapsSection />
-
-      <section
-        id="reservation"
-        className="scroll-mt-24 bg-card text-foreground"
-      >
-        <ReservationModule />
-      </section>
+      <ReservationSection />
+      <FooterSection />
     </>
   );
 }
