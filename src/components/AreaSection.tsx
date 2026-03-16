@@ -61,7 +61,7 @@ export default function AreaSection() {
       id="area"
       className="scroll-mt-24 bg-candlelight text-night-forest"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-20 md:py-24 sm:px-6">
+      <div className="mx-auto w-full max-w-7xl px-4 py-35 sm:px-6">
         <Reveal className="mb-8 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight text-midnight-grove sm:text-4xl">
             {t("title")}
@@ -158,7 +158,7 @@ export default function AreaSection() {
 
         <iframe
           src="https://www.google.com/maps?q=Bed%20%26%20Breakfast%20Klein%20Ockenburgh%2C%20Den%20Haag&output=embed"
-          className="h-[420px] w-4/5 mx-auto rounded-lg -mb-50"
+          className="h-[420px] w-4/5 mx-auto rounded-lg -mb-70"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

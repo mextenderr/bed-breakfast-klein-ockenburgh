@@ -28,7 +28,7 @@ export default function TarievenSection() {
       id="tarieven"
       className="scroll-mt-24 pt-40 bg-midnight-grove text-candlelight"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-14">
+      <div className="mx-auto w-full max-w-7xl px-4 py-35 sm:px-6 md:py-35">
         <Reveal className="mb-8 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             {t("title")}

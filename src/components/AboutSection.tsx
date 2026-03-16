@@ -10,14 +10,13 @@ export default function AboutSection() {
       id="about"
       className="scroll-mt-24 bg-candlelight text-night-forest"
     >
-      <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-20 md:py-24 sm:px-6 lg:grid-cols-2 lg:items-center">
+      <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-20 md:py-35 sm:px-6 lg:grid-cols-2 lg:items-center">
         <Reveal>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
             <Image
               src="/samen.jpg"
               alt={t("imageAlt")}
               fill
-              sizes="(min-width: 1024px) 50vw, 100vw"
               className="h-full w-full object-cover object-center"
             />
           </div>

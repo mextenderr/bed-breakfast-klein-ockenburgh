@@ -9,6 +9,7 @@ import Reveal from "@/components/Reveal";
 export default function HeroHeader() {
   const t = useTranslations("HomePage");
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
+  const [hasStartedScrolling, setHasStartedScrolling] = useState(false);
 
   const goToReservation = () => {
     const section = document.getElementById("reservation");
@@ -33,11 +34,27 @@ export default function HeroHeader() {
   };
 
   useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY <= 0) return;
+
+      setHasStartedScrolling(true);
+      setShowScrollIndicator(false);
+    };
+
+    onScroll();
+
     const timeoutId = window.setTimeout(() => {
-      setShowScrollIndicator(true);
+      if (!window.scrollY) {
+        setShowScrollIndicator(true);
+      }
     }, 15000);
 
-    return () => window.clearTimeout(timeoutId);
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   return (
@@ -60,7 +77,7 @@ export default function HeroHeader() {
       <div className="absolute inset-0 bg-black/20" />
       <div className="absolute inset-0 bg-linear-to-t from-night-forest/60 via-night-forest/20 to-transparent" />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex h-full items-end justify-start text-center text-aged-parchment">
+      <div className="relative z-10 mx-25 w-full flex h-full items-end justify-start text-center text-aged-parchment">
         <div className="flex max-w-7xl flex-col mb-25">
           <Reveal>
             <div className="flex items-center gap-3">
@@ -102,7 +119,7 @@ export default function HeroHeader() {
             aria-label="Scroll to next section"
             onClick={goToNextSection}
             className={`absolute right-0 bottom-25 cursor-pointer transition-opacity duration-500 ${
-              showScrollIndicator
+              showScrollIndicator && !hasStartedScrolling
                 ? "opacity-100"
                 : "pointer-events-none opacity-0"
             }`}

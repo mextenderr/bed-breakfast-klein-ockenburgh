@@ -7,11 +7,6 @@ import { getPathname, usePathname } from "@/i18n/navigation";
 
 const SUPPORTED_LOCALES = ["nl-NL", "en-GB"] as const;
 
-function getHeaderOffset() {
-  const topbar = document.querySelector<HTMLElement>("[data-topbar]");
-  return topbar ? topbar.getBoundingClientRect().bottom + 8 : 72;
-}
-
 export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,16 +61,16 @@ export default function Topbar() {
     <header className="fixed inset-x-0 top-0 z-50 text-aged-parchment">
       <div
         data-topbar
-        className={`mx-auto flex w-full max-w-7xl items-center justify-between px-4 transition-all duration-400 sm:px-6 ${
+        className={`flex w-full items-center justify-between px-4 sm:px-10 lg:px-25 transition-[height,background-color,border-color,box-shadow] duration-300 ease-out motion-reduce:transition-none ${
           isScrolled
-            ? "mt-2 h-16 rounded-xl border border-forest-green/60 bg-night-forest/80 shadow-lg shadow-black/25 backdrop-blur-md"
-            : "h-20 bg-black/30 backdrop-blur-sm"
+            ? "h-20 bg-night-forest/60 shadow-[0_14px_34px_rgba(12,20,14,0.28)] backdrop-blur-xl"
+            : "h-25 bg-night-forest/10 backdrop-blur-xs"
         }`}
       >
         <button
           type="button"
           onClick={() => scrollToSection("hero")}
-          className="inline-flex items-center transition-transform duration-300 hover:scale-[1.01]"
+          className="inline-flex items-center rounded-full transition-transform duration-300 ease-out hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aged-parchment/70 focus-visible:ring-offset-2 focus-visible:ring-offset-night-forest motion-reduce:transition-none"
           aria-label={t("brand")}
         >
           <Image
@@ -84,8 +79,10 @@ export default function Topbar() {
             width={160}
             height={48}
             priority
-            className={`w-auto rounded-full transition-all duration-300 ${
-              isScrolled ? "h-10" : "h-12"
+            className={`w-auto rounded-full transition-[height,filter] duration-300 ease-out motion-reduce:transition-none ${
+              isScrolled
+                ? "h-10 drop-shadow-none"
+                : "h-12 drop-shadow-[0_12px_26px_rgba(12,20,14,0.26)]"
             }`}
           />
         </button>
@@ -97,7 +94,7 @@ export default function Topbar() {
                 key={item.targetId}
                 type="button"
                 onClick={() => scrollToSection(item.targetId)}
-                className="text-sm font-medium transition-opacity hover:opacity-80 hover:cursor-pointer"
+                className="text-sm font-medium text-candlelight/82 transition-colors duration-200 hover:cursor-pointer hover:text-aged-parchment focus-visible:outline-none focus-visible:text-aged-parchment"
               >
                 {item.label}
               </button>
@@ -105,7 +102,7 @@ export default function Topbar() {
           </nav>
 
           <div
-            className="inline-flex overflow-hidden rounded border border-forest-green"
+            className="inline-flex overflow-hidden border border-candlelight/18 bg-night-forest/25 shadow-[0_10px_24px_rgba(12,20,14,0.12)]"
             aria-label={t("languageLabel")}
           >
             {SUPPORTED_LOCALES.map((language) => (
@@ -113,10 +110,10 @@ export default function Topbar() {
                 key={language}
                 type="button"
                 onClick={() => switchLanguage(language)}
-                className={`px-2 py-1 text-xs font-semibold ${
+                className={`px-3 py-1.5 text-xs font-semibold transition-colors duration-200 focus-visible:outline-none ${
                   locale === language
-                    ? "bg-forest-green/60"
-                    : "bg-transparent hover:cursor-pointer"
+                    ? "bg-candlelight/14 text-aged-parchment"
+                    : "bg-transparent text-candlelight/70 hover:cursor-pointer hover:bg-candlelight/8 hover:text-candlelight"
                 }`}
               >
                 {language === "en-GB" ? "EN" : "NL"}
@@ -127,7 +124,7 @@ export default function Topbar() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded border border-forest-green md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-candlelight/18 bg-night-forest/25 transition-colors duration-200 hover:bg-night-forest/38 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aged-parchment/70 focus-visible:ring-offset-2 focus-visible:ring-offset-night-forest md:hidden"
           aria-expanded={menuOpen}
           aria-label={t("menuToggle")}
           onClick={() => setMenuOpen((current) => !current)}
@@ -153,10 +150,10 @@ export default function Topbar() {
 
       {menuOpen && (
         <nav
-          className={`px-4 py-3 backdrop-blur-sm transition-all md:hidden ${
+          className={`px-4 py-3 backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-300 ease-out motion-reduce:transition-none md:hidden ${
             isScrolled
-              ? "mx-auto mt-2 w-[calc(100%-2rem)] max-w-7xl rounded-xl border border-forest-green/60 bg-night-forest/90"
-              : "border-b border-forest-green bg-black/80"
+              ? "mx-auto mt-2 w-[calc(100%-2rem)] max-w-7xl rounded-2xl border border-candlelight/12 bg-night-forest/88 shadow-[0_18px_42px_rgba(12,20,14,0.28)]"
+              : "border-b border-candlelight/10 bg-night-forest/82"
           }`}
         >
           <div className="flex flex-col gap-2">
@@ -165,7 +162,7 @@ export default function Topbar() {
                 key={item.targetId}
                 type="button"
                 onClick={() => scrollToSection(item.targetId)}
-                className="rounded px-2 py-2 text-left text-sm font-medium transition-colors hover:bg-forest-green/30"
+                className="rounded-xl px-3 py-2 text-left text-sm font-medium text-candlelight/84 transition-colors duration-200 hover:bg-candlelight/8 hover:text-aged-parchment focus-visible:outline-none focus-visible:bg-candlelight/8"
               >
                 {item.label}
               </button>
@@ -177,10 +174,10 @@ export default function Topbar() {
                   key={language}
                   type="button"
                   onClick={() => switchLanguage(language)}
-                  className={`rounded border px-3 py-1 text-xs font-semibold ${
+                  className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors duration-200 focus-visible:outline-none ${
                     locale === language
-                      ? "border-aged-parchment bg-forest-green/45"
-                      : "border-forest-green bg-transparent"
+                      ? "border-candlelight/25 bg-candlelight/14 text-aged-parchment"
+                      : "border-candlelight/16 bg-transparent text-candlelight/70 hover:bg-candlelight/8 hover:text-candlelight"
                   }`}
                 >
                   {language === "en-GB" ? "EN" : "NL"}

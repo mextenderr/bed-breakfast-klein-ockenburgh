@@ -93,9 +93,9 @@ export default function RoomSection() {
   return (
     <section
       id="room"
-      className="scroll-mt-24 bg-night-forest text-candlelight"
+      className="scroll-mt-24 bg-night-forest text-candlelight py-35"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 pt-14 sm:px-6 md:pt-24">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         <Reveal className="mb-6 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             {t("title")}
