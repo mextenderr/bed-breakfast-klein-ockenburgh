@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { getLocale } from "next-intl/server";
+import { getSiteUrl, siteConfig } from "@/lib/site";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -10,18 +12,48 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Bed & Breakfast Klein Ockenburgh",
+  metadataBase: getSiteUrl(),
+  applicationName: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
   description:
     "Official website for Bed & Breakfast Klein Ockenburgh in The Hague.",
+  referrer: "origin-when-cross-origin",
+  category: "travel",
+  manifest: "/manifest.webmanifest",
+  formatDetection: {
+    address: false,
+    email: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={playfairDisplay.variable}>
+    <html lang={locale} className={playfairDisplay.variable}>
       <body className="antialiased">
         {children}
         <Analytics />
