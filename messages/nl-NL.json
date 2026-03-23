@@ -39,7 +39,8 @@
   },
   "AboutSection": {
     "title": "Over ons",
-    "body": "Bed & Breakfast Klein Ockenburgh biedt een rustige en persoonlijke overnachting in Den Haag. Je verblijft in een comfortabele kamer op de begane grond met een eigen entree, terwijl strand, duinen en de stad allemaal dichtbij zijn.",
+    "body": "Na een intensieve verbouwing van zeven maanden zijn wij trots om onze B&B te presenteren.\n\nToen onze twee kinderen op zichzelf gingen wonen, ontdekten we dat een groot deel van ons huis onbenut bleef. Dat bracht ons op het idee om de garage om te bouwen tot een sfeervolle bed & breakfast.\n\nWat begon als een mooi plan, groeide al snel uit tot een uitgebreid traject met vergunningen, bouwtekeningen, een architect, een website en een domeinnaam. De to-dolijst werd steeds langer, maar het resultaat mag er zijn.\n\nDankzij vrienden en familie, die als eerste proefgasten bij ons verbleven, kregen we het vertrouwen dat we iets bijzonders hebben neergezet. Natuurlijk leren we nog elke dag bij, maar we kijken er vooral naar uit om onze gasten een warm en comfortabel verblijf te bieden.\n\nWe hopen u binnenkort van harte te mogen verwelkomen.",
+    "signature": "Marcel & Hennie",
     "imageAlt": "De hosts van Bed & Breakfast Klein Ockenburgh"
   },
   "RoomSection": {
@@ -130,6 +131,7 @@
       "Rookvrij verblijf.",
       "Huisdieren zijn niet toegestaan.",
       "Prijzen zijn inclusief btw.",
+      "Schade die tijdens het verblijf aan de kamer of inventaris wordt veroorzaakt, wordt verhaald op de huurder.",
       "Toeristenbelasting: EUR 6,20 per persoon per nacht (exclusief).",
       "Annuleren tot 1 week voor boeking: 50% terugbetaling. Daarna: 0% terugbetaling."
     ]
@@ -141,13 +143,57 @@
   },
   "ReservationSection": {
     "title": "Reserveren",
-    "intro": "Controleer direct de beschikbaarheid en reserveer eenvoudig je verblijf bij Bed & Breakfast Klein Ockenburgh.",
+    "intro": "Gebruik hieronder onze reserveringsmodule om direct beschikbaarheid te controleren en je verblijf eenvoudig in onze website te boeken.",
     "providerLogoAlt": "Bedandbreakfast.nl",
     "eyebrow": "Aangesloten bij",
     "providerTitle": "Wij staan ook op Bedandbreakfast.nl",
-    "providerDescription": "Onze accommodatie is ook te vinden op Bedandbreakfast.nl. Daar kun je onze vermelding bekijken en desgewenst direct via het platform reserveren.",
-    "providerConfirmation": "Bekijk onze openbare Bedandbreakfast.nl-pagina voor extra informatie en beschikbaarheid.",
+    "providerDescription": "Onze accommodatie is ook te vinden op Bedandbreakfast.nl. Deze vermelding geeft extra vertrouwen en laat zien dat wij ook via een bekend platform zichtbaar zijn.",
+    "providerConfirmation": "Bekijk onze openbare Bedandbreakfast.nl-pagina voor extra informatie, reviews en beschikbaarheid.",
+    "providerAlternative": "Liever via Bedandbreakfast.nl boeken? Dat is ook mogelijk via onderstaande link.",
     "providerLink": "Bekijk onze vermelding op Bedandbreakfast.nl",
     "iframeTitle": "Reserveringsmodule"
+  },
+  "FooterSection": {
+    "description": "Bed & Breakfast Klein Ockenburgh is een kleinschalig verblijf in Den Haag, dicht bij strand, duinen en de stad.",
+    "contact": {
+      "email": "E-mail: info@kleinockenburgh.nl",
+      "phone": "Telefoon: +31 70 123 45 67",
+      "address": "Adres: Mockingbirdlaan 12, 2554 XX Den Haag"
+    },
+    "details": {
+      "title": "Verblijfsinformatie",
+      "items": {
+        "registeredName": {
+          "label": "Naam",
+          "value": "Bed & Breakfast Klein Ockenburgh"
+        },
+        "breakfast": {
+          "label": "Ontbijt",
+          "value": "Dagelijks vers ontbijt inbegrepen"
+        },
+        "parking": {
+          "label": "Parkeren",
+          "value": "Gratis parkeren op eigen terrein"
+        },
+        "checkIn": {
+          "label": "Inchecken",
+          "value": "15:00 - 21:00 op afspraak"
+        }
+      }
+    },
+    "quickLinks": {
+      "title": "Snelle links",
+      "home": "Home",
+      "about": "Over ons",
+      "room": "Kamer",
+      "area": "Omgeving",
+      "rates": "Tarieven",
+      "reservation": "Reserveren"
+    },
+    "listingNote": "Onze Bedandbreakfast.nl-vermelding is beschikbaar. Direct boeken en beschikbaarheid controleren kan ook via onze reserveringssectie.",
+    "bottom": {
+      "copyright": "© 2026 Bed & Breakfast Klein Ockenburgh. Alle rechten voorbehouden.",
+      "note": "Persoonlijk verblijf in Den Haag, vlak bij strand, stad en natuur."
+    }
   }
 }

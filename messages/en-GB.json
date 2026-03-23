@@ -40,6 +40,7 @@
   "AboutSection": {
     "title": "About us",
     "body": "Bed & Breakfast Klein Ockenburgh offers a quiet and personal stay in The Hague. You stay in a comfortable ground-floor room with a private entrance, while the beach, dunes and city are all within easy reach.",
+    "signature": "Marcel & Hennie",
     "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh"
   },
   "RoomSection": {
@@ -130,6 +131,7 @@
       "Non-smoking accommodation.",
       "Pets are not allowed.",
       "Prices include VAT.",
+      "Any damage caused to the room or its contents during the stay will be charged to the renter.",
       "Tourist tax: EUR 6.20 per person per night (excluded).",
       "Cancellation up to 1 week before arrival: 50% refund. After that: 0% refund."
     ]
@@ -141,13 +143,57 @@
   },
   "ReservationSection": {
     "title": "Reservation",
-    "intro": "Check availability directly and book your stay at Bed & Breakfast Klein Ockenburgh with ease.",
+    "intro": "Use the reservation module below to check availability directly and book your stay easily on our website.",
     "providerLogoAlt": "Bedandbreakfast.nl",
     "eyebrow": "Listed with",
     "providerTitle": "We are also listed on Bedandbreakfast.nl",
-    "providerDescription": "Our accommodation can also be found on Bedandbreakfast.nl. You can view our listing there and, if you prefer, book directly through the platform.",
-    "providerConfirmation": "View our public Bedandbreakfast.nl page for extra details and availability.",
+    "providerDescription": "Our accommodation is also listed on Bedandbreakfast.nl. This adds extra credibility and shows that we are visible on a trusted platform as well.",
+    "providerConfirmation": "View our public Bedandbreakfast.nl page for extra details, reviews and availability.",
+    "providerAlternative": "Prefer to book through Bedandbreakfast.nl instead? You can do so via the link below.",
     "providerLink": "View our listing on Bedandbreakfast.nl",
     "iframeTitle": "Reservation module"
+  },
+  "FooterSection": {
+    "description": "Bed & Breakfast Klein Ockenburgh is a small-scale stay in The Hague, close to the beach, dunes and the city.",
+    "contact": {
+      "email": "Email: info@kleinockenburgh.nl",
+      "phone": "Phone: +31 70 123 45 67",
+      "address": "Address: Mockingbirdlaan 12, 2554 XX The Hague"
+    },
+    "details": {
+      "title": "Stay details",
+      "items": {
+        "registeredName": {
+          "label": "Name",
+          "value": "Bed & Breakfast Klein Ockenburgh"
+        },
+        "breakfast": {
+          "label": "Breakfast",
+          "value": "Fresh breakfast included every day"
+        },
+        "parking": {
+          "label": "Parking",
+          "value": "Free parking on site"
+        },
+        "checkIn": {
+          "label": "Check-in",
+          "value": "15:00 - 21:00 by appointment"
+        }
+      }
+    },
+    "quickLinks": {
+      "title": "Quick links",
+      "home": "Home",
+      "about": "About",
+      "room": "Room",
+      "area": "Area",
+      "rates": "Rates",
+      "reservation": "Reservation"
+    },
+    "listingNote": "Our Bedandbreakfast.nl listing is available. Direct booking and availability can also be checked via our reservation section.",
+    "bottom": {
+      "copyright": "© 2026 Bed & Breakfast Klein Ockenburgh. All rights reserved.",
+      "note": "A personal stay in The Hague, close to the beach, city and nature."
+    }
   }
 }

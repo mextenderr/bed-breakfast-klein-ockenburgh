@@ -150,11 +150,9 @@ export default function Topbar() {
 
       {menuOpen && (
         <nav
-          className={`px-4 py-3 backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-300 ease-out motion-reduce:transition-none md:hidden ${
-            isScrolled
-              ? "mx-auto mt-2 w-[calc(100%-2rem)] max-w-7xl rounded-2xl border border-candlelight/12 bg-night-forest/88 shadow-[0_18px_42px_rgba(12,20,14,0.28)]"
-              : "border-b border-candlelight/10 bg-night-forest/82"
-          }`}
+          className={
+            "px-4 py-3 backdrop-blur-xl transition-[background-color,border-color,box-shadow] duration-300 ease-out motion-reduce:transition-none md:hidden bg-night-forest/90"
+          }
         >
           <div className="flex flex-col gap-2">
             {navItems.map((item) => (

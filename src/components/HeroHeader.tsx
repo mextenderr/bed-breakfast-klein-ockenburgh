@@ -23,6 +23,16 @@ export default function HeroHeader() {
     });
   };
 
+  const goToRoom = () => {
+    const section = document.getElementById("room");
+    if (!section) return;
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   const goToNextSection = () => {
     const section = document.getElementById("about");
     if (!section) return;
@@ -77,23 +87,23 @@ export default function HeroHeader() {
       <div className="absolute inset-0 bg-black/20" />
       <div className="absolute inset-0 bg-linear-to-t from-night-forest/60 via-night-forest/20 to-transparent" />
 
-      <div className="relative z-10 mx-25 w-full flex h-full items-end justify-start text-center text-aged-parchment">
-        <div className="flex max-w-7xl flex-col mb-25">
+      <div className="relative z-10 flex h-full w-full items-end justify-center px-6 pb-24 text-center text-aged-parchment md:mx-25 md:justify-start md:px-0 md:pb-0">
+        <div className="mb-10 flex max-w-7xl flex-col items-center md:mb-25 md:items-start">
           <Reveal>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center gap-3 md:justify-start">
               <div className="h-px w-10 bg-candlelight/70" />
-              <h3 className="text-left text-lg font-semibold tracking-[0.22em] text-candlelight/80 uppercase sm:text-xl">
+              <h3 className="text-center text-lg font-semibold tracking-[0.22em] text-candlelight/80 uppercase sm:text-xl md:text-left">
                 {t("eyebrow")}
               </h3>
             </div>
           </Reveal>
           <Reveal delayMs={500}>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-7xl mt-5 mb-10">
+            <h1 className="mt-5 mb-10 max-w-4xl text-4xl font-semibold tracking-tight sm:text-7xl">
               {t("heroTitle")}
             </h1>
           </Reveal>
           <Reveal delayMs={1000}>
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 md:justify-start">
               <Button
                 onClick={goToReservation}
                 className="group relative h-auto overflow-hidden border border-candlelight/30 bg-candlelight px-7 py-4 text-base font-semibold text-night-forest shadow-[0_14px_35px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#f6f0da] hover:shadow-[0_18px_42px_rgba(0,0,0,0.36)] sm:px-9 sm:py-5 sm:text-lg"
@@ -106,7 +116,7 @@ export default function HeroHeader() {
 
               <button
                 type="button"
-                onClick={goToReservation}
+                onClick={goToRoom}
                 className="cursor-pointer text-sm font-medium text-candlelight/72 underline decoration-current underline-offset-4 transition-colors hover:text-candlelight/90"
               >
                 {t("ctaSecondary")}
@@ -118,7 +128,7 @@ export default function HeroHeader() {
             type="button"
             aria-label="Scroll to next section"
             onClick={goToNextSection}
-            className={`absolute right-0 bottom-25 cursor-pointer transition-opacity duration-500 ${
+            className={`absolute right-1/2 bottom-10 translate-x-1/2 cursor-pointer transition-opacity duration-500 md:right-0 md:bottom-25 md:translate-x-0 ${
               showScrollIndicator && !hasStartedScrolling
                 ? "opacity-100"
                 : "pointer-events-none opacity-0"

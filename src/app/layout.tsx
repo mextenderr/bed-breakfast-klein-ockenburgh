@@ -11,7 +11,8 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Bed & Breakfast Klein Ockenburgh",
-  description: "Official website for Bed & Breakfast Klein Ockenburgh in The Hague.",
+  description:
+    "Official website for Bed & Breakfast Klein Ockenburgh in The Hague.",
 };
 
 export default function RootLayout({

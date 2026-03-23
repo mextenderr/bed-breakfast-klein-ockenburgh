@@ -73,13 +73,13 @@ export default function AreaSection() {
           <Carousel
             setApi={setCarouselApi}
             opts={{ loop: true, align: "start" }}
-            className="mx-auto w-full mb-8"
+            className="mx-auto mb-8 w-full px-12 sm:px-14 lg:px-0"
           >
             <CarouselContent>
               {places.map((place) => (
                 <CarouselItem
                   key={`${place.name}-${place.distance ?? "n-a"}`}
-                  className="basis-full lg:basis-1/3"
+                  className="basis-full md:basis-1/2 xl:basis-1/3"
                 >
                   <article className="h-full overflow-hidden rounded-lg border border-forest-green/45 bg-candlelight/85">
                     <div className="relative aspect-[16/9] w-full">
@@ -128,8 +128,8 @@ export default function AreaSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="-left-15 border-forest-green/55 bg-candlelight text-midnight-grove hover:bg-forest-green/15 hover:text-midnight-grove" />
-            <CarouselNext className="-right-15 border-forest-green/55 bg-candlelight text-midnight-grove hover:bg-forest-green/15 hover:text-midnight-grove" />
+            <CarouselPrevious className="left-0 border-forest-green/55 bg-candlelight text-midnight-grove hover:bg-forest-green/15 hover:text-midnight-grove lg:-left-15" />
+            <CarouselNext className="right-0 border-forest-green/55 bg-candlelight text-midnight-grove hover:bg-forest-green/15 hover:text-midnight-grove lg:-right-15" />
           </Carousel>
         </Reveal>
 

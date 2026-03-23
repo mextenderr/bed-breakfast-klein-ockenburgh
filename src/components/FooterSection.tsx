@@ -1,15 +1,17 @@
 import Image from "next/image";
-
-const quickLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Room", href: "#room" },
-  { label: "Area", href: "#area" },
-  { label: "Rates", href: "#tarieven" },
-  { label: "Reservation", href: "#reservation" },
-] as const;
+import { useTranslations } from "next-intl";
 
 export default function FooterSection() {
+  const t = useTranslations("FooterSection");
+  const quickLinks = [
+    { label: t("quickLinks.home"), href: "#hero" },
+    { label: t("quickLinks.about"), href: "#about" },
+    { label: t("quickLinks.room"), href: "#room" },
+    { label: t("quickLinks.area"), href: "#area" },
+    { label: t("quickLinks.rates"), href: "#tarieven" },
+    { label: t("quickLinks.reservation"), href: "#reservation" },
+  ] as const;
+
   return (
     <footer id="footer" className="bg-night-forest text-candlelight">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
@@ -23,43 +25,50 @@ export default function FooterSection() {
               className="h-12 w-auto rounded-full"
             />
             <p className="mt-5 max-w-md text-sm leading-relaxed text-candlelight/78">
-              Bed & Breakfast Klein Ockenburgh is a small-scale stay in The
-              Hague, close to the beach, dunes and the city.
+              {t("description")}
             </p>
             <div className="mt-5 space-y-2 text-sm text-candlelight/82">
-              <p>Email: info@kleinockenburgh.nl</p>
-              <p>Phone: +31 70 123 45 67</p>
-              <p>Address: Mockingbirdlaan 12, 2554 XX Den Haag</p>
+              <p>{t("contact.email")}</p>
+              <p>{t("contact.phone")}</p>
+              <p>{t("contact.address")}</p>
             </div>
           </div>
 
           <div>
             <h2 className="text-sm font-semibold tracking-[0.16em] text-aged-parchment uppercase">
-              Business details
+              {t("details.title")}
             </h2>
             <dl className="mt-5 space-y-3 text-sm text-candlelight/82">
               <div>
-                <dt className="font-medium text-candlelight">Registered name</dt>
-                <dd>Bed & Breakfast Klein Ockenburgh</dd>
+                <dt className="font-medium text-candlelight">
+                  {t("details.items.registeredName.label")}
+                </dt>
+                <dd>{t("details.items.registeredName.value")}</dd>
               </div>
               <div>
-                <dt className="font-medium text-candlelight">Registration no.</dt>
-                <dd>KVK 00000000</dd>
+                <dt className="font-medium text-candlelight">
+                  {t("details.items.breakfast.label")}
+                </dt>
+                <dd>{t("details.items.breakfast.value")}</dd>
               </div>
               <div>
-                <dt className="font-medium text-candlelight">VAT no.</dt>
-                <dd>NL000000000B00</dd>
+                <dt className="font-medium text-candlelight">
+                  {t("details.items.parking.label")}
+                </dt>
+                <dd>{t("details.items.parking.value")}</dd>
               </div>
               <div>
-                <dt className="font-medium text-candlelight">Check-in</dt>
-                <dd>15:00 - 21:00 by appointment</dd>
+                <dt className="font-medium text-candlelight">
+                  {t("details.items.checkIn.label")}
+                </dt>
+                <dd>{t("details.items.checkIn.value")}</dd>
               </div>
             </dl>
           </div>
 
           <div>
             <h2 className="text-sm font-semibold tracking-[0.16em] text-aged-parchment uppercase">
-              Quick links
+              {t("quickLinks.title")}
             </h2>
             <nav className="mt-5 flex flex-col gap-2 text-sm text-candlelight/82">
               {quickLinks.map((link) => (
@@ -74,15 +83,14 @@ export default function FooterSection() {
             </nav>
 
             <div className="mt-6 rounded-3xl border border-forest-green/30 bg-midnight-grove/60 p-4 text-sm text-candlelight/78">
-              Bedandbreakfast.nl listing available. Direct booking and
-              availability can also be checked via our reservation section.
+              {t("listingNote")}
             </div>
           </div>
         </div>
 
         <div className="mt-8 flex flex-col gap-2 border-t border-forest-green/25 pt-5 text-xs text-candlelight/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Bed & Breakfast Klein Ockenburgh. All rights reserved.</p>
-          <p>Mock footer content. Replace with final legal and contact details.</p>
+          <p>{t("bottom.copyright")}</p>
+          <p>{t("bottom.note")}</p>
         </div>
       </div>
     </footer>
