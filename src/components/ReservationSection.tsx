@@ -1,13 +1,17 @@
+"use client";
+
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { CheckCircle2, ExternalLink } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export default function ReservationSection() {
+  const locale = useLocale();
   const t = useTranslations("ReservationSection");
 
   return (
     <section
+      key={locale}
       id="reservation"
       className="scroll-mt-24 bg-candlelight text-night-forest"
     >

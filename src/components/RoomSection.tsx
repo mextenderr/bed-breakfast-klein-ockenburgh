@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   BedDouble,
   DoorOpen,
@@ -11,6 +11,7 @@ import {
   Bath,
   Snowflake,
   House,
+  ChevronDown,
 } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -33,12 +34,6 @@ const roomImageLayoutMap: Record<string, RoomImageLayout> = {
 
 const MOBILE_BATCH_SIZE = 4;
 
-type RoomMessages = {
-  RoomSection?: {
-    highlights?: string[];
-  };
-};
-
 const roomHighlightIcons = [
   BedDouble,
   Bath,
@@ -50,8 +45,8 @@ const roomHighlightIcons = [
 ];
 
 export default function RoomSection() {
+  const locale = useLocale();
   const t = useTranslations("RoomSection");
-  const messages = useMessages() as RoomMessages;
   const [isMobile, setIsMobile] = useState(() =>
     typeof window !== "undefined" ? window.innerWidth < 640 : false,
   );
@@ -80,8 +75,9 @@ export default function RoomSection() {
     : roomImages;
   const hasMoreMobileImages =
     isMobile && mobileVisibleCount < roomImages.length;
-  const highlights = Array.isArray(messages.RoomSection?.highlights)
-    ? messages.RoomSection.highlights
+  const rawHighlights = t.raw("highlights");
+  const highlights = Array.isArray(rawHighlights)
+    ? (rawHighlights as string[])
     : [];
 
   const showMoreMobileImages = () => {
@@ -92,6 +88,7 @@ export default function RoomSection() {
 
   return (
     <section
+      key={locale}
       id="room"
       className="scroll-mt-24 bg-night-forest text-candlelight py-35"
     >
@@ -127,7 +124,7 @@ export default function RoomSection() {
         </Reveal>
       </div>
 
-      <div className="w-full px-4 pb-14 sm:px-6 md:pb-16">
+      <div className="w-full px-4 pb-8 sm:px-6 md:pb-16">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:auto-rows-[140px] md:grid-cols-3 lg:grid-cols-4">
           {visibleImages.map((image, index) => {
             const layout = roomImageLayoutMap[image.src];
@@ -162,13 +159,16 @@ export default function RoomSection() {
         </div>
 
         {hasMoreMobileImages ? (
-          <button
-            type="button"
-            onClick={showMoreMobileImages}
-            className="mt-5 text-sm font-medium text-aged-parchment underline decoration-forest-green underline-offset-4 transition-colors hover:text-candlelight sm:hidden"
-          >
-            {t("showMore")}
-          </button>
+          <div className="mt-8 flex justify-center sm:hidden">
+            <button
+              type="button"
+              onClick={showMoreMobileImages}
+              className="inline-flex items-center gap-2 rounded-full border border-forest-green/40 bg-midnight-grove/75 px-5 py-3 text-sm font-semibold text-aged-parchment shadow-[0_14px_30px_rgba(0,0,0,0.18)] transition-all duration-200 hover:border-aged-parchment/35 hover:bg-midnight-grove hover:text-candlelight"
+            >
+              <span>{t("showMore")}</span>
+              <ChevronDown className="size-4" />
+            </button>
+          </div>
         ) : null}
       </div>
     </section>

@@ -158,7 +158,7 @@ export default function AreaSection() {
 
         <iframe
           src="https://www.google.com/maps?q=Bed%20%26%20Breakfast%20Klein%20Ockenburgh%2C%20Den%20Haag&output=embed"
-          className="h-[420px] w-4/5 mx-auto rounded-lg -mb-70"
+          className="mx-auto h-80 w-[95%] rounded-lg -mb-70 sm:h-120 sm:w-4/5"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

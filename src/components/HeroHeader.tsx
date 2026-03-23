@@ -15,11 +15,9 @@ export default function HeroHeader() {
     const section = document.getElementById("reservation");
     if (!section) return;
 
-    const topPosition = section.getBoundingClientRect().top;
-
-    window.scrollTo({
-      top: Math.max(0, topPosition),
+    section.scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   };
 

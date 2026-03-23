@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function FooterSection() {
+  const locale = useLocale();
   const t = useTranslations("FooterSection");
   const quickLinks = [
     { label: t("quickLinks.home"), href: "#hero" },
@@ -13,7 +16,11 @@ export default function FooterSection() {
   ] as const;
 
   return (
-    <footer id="footer" className="bg-night-forest text-candlelight">
+    <footer
+      key={locale}
+      id="footer"
+      className="bg-night-forest text-candlelight"
+    >
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <div className="grid gap-10 border-t border-forest-green/35 pt-10 md:grid-cols-[1.2fr_0.9fr_0.9fr]">
           <div>

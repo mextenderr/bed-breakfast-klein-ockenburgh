@@ -1,13 +1,17 @@
+"use client";
+
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Reveal from "@/components/Reveal";
 
 export default function AboutSection() {
+  const locale = useLocale();
   const t = useTranslations("AboutSection");
   const paragraphs = t("body").split("\n\n");
 
   return (
     <section
+      key={locale}
       id="about"
       className="scroll-mt-24 bg-candlelight text-night-forest"
     >

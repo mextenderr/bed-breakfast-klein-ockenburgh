@@ -1,4 +1,6 @@
-import { useMessages, useTranslations } from "next-intl";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 import Reveal from "@/components/Reveal";
 
 type RateRow = {
@@ -6,25 +8,21 @@ type RateRow = {
   price: string;
 };
 
-type TarievenMessages = {
-  TarievenSection?: {
-    rates?: RateRow[];
-    conditions?: string[];
-  };
-};
-
 export default function TarievenSection() {
+  const locale = useLocale();
   const t = useTranslations("TarievenSection");
-  const messages = useMessages() as TarievenMessages;
-  const rates = Array.isArray(messages.TarievenSection?.rates)
-    ? messages.TarievenSection.rates
+  const rawRates = t.raw("rates");
+  const rawConditions = t.raw("conditions");
+  const rates = Array.isArray(rawRates)
+    ? (rawRates as RateRow[])
     : [];
-  const conditions = Array.isArray(messages.TarievenSection?.conditions)
-    ? messages.TarievenSection.conditions
+  const conditions = Array.isArray(rawConditions)
+    ? (rawConditions as string[])
     : [];
 
   return (
     <section
+      key={locale}
       id="tarieven"
       className="scroll-mt-24 pt-40 bg-midnight-grove text-candlelight"
     >

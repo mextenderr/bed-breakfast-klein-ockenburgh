@@ -1,4 +1,6 @@
-import { useMessages } from "next-intl";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 import { BedDouble, Coffee, MapPin } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -7,25 +9,25 @@ type SellingPoint = {
   description: string;
 };
 
-type SellingPointsMessages = {
-  SellingPointsSection?: {
-    items?: SellingPoint[];
-  };
-};
-
 const sellingPointIcons = [MapPin, Coffee, BedDouble];
 
 export default function SellingPointsSection() {
-  const messages = useMessages() as SellingPointsMessages;
-  const sellingPoints = Array.isArray(messages.SellingPointsSection?.items)
-    ? messages.SellingPointsSection.items
+  const locale = useLocale();
+  const t = useTranslations("SellingPointsSection");
+  const sellingPoints = t.raw("items");
+  const items = Array.isArray(sellingPoints)
+    ? (sellingPoints as SellingPoint[])
     : [];
 
   return (
-    <section id="selling-points" className="bg-candlelight text-night-forest">
+    <section
+      key={locale}
+      id="selling-points"
+      className="bg-candlelight text-night-forest"
+    >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 border-x border-forest-green/40">
         <div className="grid md:grid-cols-3 md:divide-x md:divide-forest-green/40">
-          {sellingPoints.map((point, index) => {
+          {items.map((point, index) => {
             const Icon = sellingPointIcons[index];
             if (!Icon) return null;
 
