@@ -45,7 +45,6 @@ export default async function ConditionsPage({
 }>) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "ConditionsPage" });
-  const quickFacts = t.raw("quickFacts") as string[];
   const sections = t.raw("sections") as ConditionsSection[];
 
   return (
@@ -76,7 +75,7 @@ export default async function ConditionsPage({
               </p>
             </div>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-[1.3fr_0.9fr]">
+            <div className="mt-10">
               <div className="rounded-[32px] border border-forest-green/15 bg-white/70 p-6 shadow-[0_20px_50px_rgba(29,43,28,0.08)] backdrop-blur-xs">
                 <h2 className="text-lg font-semibold text-night-forest">
                   {t("acceptanceTitle")}
@@ -84,22 +83,6 @@ export default async function ConditionsPage({
                 <p className="mt-3 text-sm leading-relaxed text-night-forest/76 sm:text-base">
                   {t("acceptanceBody")}
                 </p>
-              </div>
-
-              <div className="rounded-[32px] border border-forest-green/15 bg-night-forest p-6 text-candlelight shadow-[0_20px_50px_rgba(29,43,28,0.14)]">
-                <h2 className="text-lg font-semibold text-aged-parchment">
-                  {t("quickFactsTitle")}
-                </h2>
-                <ul className="mt-4 space-y-3 text-sm leading-relaxed text-candlelight/84">
-                  {quickFacts.map((fact) => (
-                    <li
-                      key={fact}
-                      className="rounded-2xl border border-candlelight/10 bg-candlelight/6 px-4 py-3"
-                    >
-                      {fact}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>
