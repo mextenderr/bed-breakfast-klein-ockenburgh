@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { getPathname, usePathname } from "@/i18n/navigation";
 
-const SUPPORTED_LOCALES = ["nl-NL", "en-GB"] as const;
+const SUPPORTED_LOCALES = ["nl", "en"] as const;
 
 export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +13,8 @@ export default function Topbar() {
   const t = useTranslations("Topbar");
   const pathname = usePathname();
   const locale = useLocale();
+  const isHomePage = pathname === "/";
+  const homePath = getPathname({ href: "/", locale });
 
   const navItems = [
     { label: t("home"), targetId: "hero" },
@@ -24,6 +26,12 @@ export default function Topbar() {
   ];
 
   const scrollToSection = (targetId: string) => {
+    if (!isHomePage) {
+      window.location.assign(`${homePath}#${targetId}`);
+      setMenuOpen(false);
+      return;
+    }
+
     const section = document.getElementById(targetId);
     if (!section) return;
 
@@ -58,33 +66,44 @@ export default function Topbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 text-aged-parchment">
+    <header className="fixed inset-x-0 top-0 z-50 overflow-visible text-aged-parchment">
       <div
         data-topbar
         className={`flex w-full items-center justify-between px-4 sm:px-10 lg:px-25 transition-[height,background-color,border-color,box-shadow] duration-300 ease-out motion-reduce:transition-none ${
           isScrolled
             ? "h-20 bg-night-forest/60 shadow-[0_14px_34px_rgba(12,20,14,0.28)] backdrop-blur-xl"
-            : "h-25 bg-night-forest/10 backdrop-blur-xs"
+            : "h-25 bg-night-forest/40 backdrop-blur-lg"
         }`}
       >
         <button
           type="button"
-          onClick={() => scrollToSection("hero")}
-          className="inline-flex items-center rounded-full transition-transform duration-300 ease-out hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aged-parchment/70 focus-visible:ring-offset-2 focus-visible:ring-offset-night-forest motion-reduce:transition-none"
+          onClick={() => {
+            if (isHomePage) {
+              scrollToSection("hero");
+              return;
+            }
+
+            window.location.assign(homePath);
+          }}
+          className="relative inline-flex items-center rounded-full hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aged-parchment/70 focus-visible:ring-offset-2 focus-visible:ring-offset-night-forest"
           aria-label={t("brand")}
         >
-          <Image
-            src="/logo.png"
-            alt={t("brand")}
-            width={160}
-            height={48}
-            priority
-            className={`w-auto rounded-full transition-[height,filter] duration-300 ease-out motion-reduce:transition-none ${
+          <div
+            className={`overflow-hidden rounded-full bg-[#616f47] transition-[height,width,box-shadow,transform] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
               isScrolled
-                ? "h-10 drop-shadow-none"
-                : "h-12 drop-shadow-[0_12px_26px_rgba(12,20,14,0.26)]"
+                ? "size-15 translate-y-0 shadow-none"
+                : "size-16 shadow-[0_8px_30px_rgba(0,0,0,0.3)] sm:h-40 sm:w-40 sm:translate-y-12.5"
             }`}
-          />
+          >
+            <Image
+              src="/logo.png"
+              alt={t("brand")}
+              width={240}
+              height={240}
+              priority
+              className="h-full w-full scale-90 object-cover"
+            />
+          </div>
         </button>
 
         <div className="hidden items-center gap-6 md:flex">
@@ -116,7 +135,7 @@ export default function Topbar() {
                     : "bg-transparent text-candlelight/70 hover:cursor-pointer hover:bg-candlelight/8 hover:text-candlelight"
                 }`}
               >
-                {language === "en-GB" ? "EN" : "NL"}
+                {language === "en" ? "EN" : "NL"}
               </button>
             ))}
           </div>
@@ -178,7 +197,7 @@ export default function Topbar() {
                       : "border-candlelight/16 bg-transparent text-candlelight/70 hover:bg-candlelight/8 hover:text-candlelight"
                   }`}
                 >
-                  {language === "en-GB" ? "EN" : "NL"}
+                  {language === "en" ? "EN" : "NL"}
                 </button>
               ))}
             </div>

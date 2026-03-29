@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { getLocale } from "next-intl/server";
 import { getSiteUrl, siteConfig } from "@/lib/site";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
@@ -53,7 +47,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} className={playfairDisplay.variable}>
+    <html lang={locale}>
       <body className="antialiased">
         {children}
         <Analytics />

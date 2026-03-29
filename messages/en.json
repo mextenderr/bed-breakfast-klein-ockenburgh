@@ -1,0 +1,359 @@
+{
+  "Topbar": {
+    "brand": "Klein Ockenburgh",
+    "home": "Home",
+    "about": "About",
+    "room": "Room",
+    "area": "Area",
+    "rates": "Rates",
+    "reservation": "Reservation",
+    "menuToggle": "Toggle menu",
+    "languageLabel": "Language"
+  },
+  "Carousel": {
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide"
+  },
+  "HomePage": {
+    "eyebrow": "Bed & Breakfast",
+    "heroTitle": "Klein Ockenburgh",
+    "ctaPrimary": "Reserve your stay",
+    "ctaSecondary": "Discover the room",
+    "scrollIndicator": "Scroll"
+  },
+  "Metadata": {
+    "title": "Bed & Breakfast Klein Ockenburgh | Official website",
+    "description": "Small-scale bed & breakfast in The Hague, close to the beach, dunes and the city. Includes breakfast, free parking and direct online booking.",
+    "imageAlt": "Atmospheric impression of Bed & Breakfast Klein Ockenburgh in The Hague",
+    "keywords": [
+      "bed and breakfast the hague",
+      "b&b the hague",
+      "bed and breakfast kijkduin",
+      "stay in the hague",
+      "bed and breakfast near beach the hague",
+      "klein ockenburgh",
+      "guesthouse the hague"
+    ]
+  },
+  "SellingPointsSection": {
+    "items": [
+      {
+        "title": "Beautiful location",
+        "description": "Quietly situated near the beach, the city and green surroundings."
+      },
+      {
+        "title": "Breakfast included",
+        "description": "A fresh and generous breakfast every morning."
+      },
+      {
+        "title": "One room only",
+        "description": "Personal attention in a small-scale setting."
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About us",
+    "body": "After an intensive seven-month renovation, we are proud to present our B&B.\n\nWhen our two children moved out, we discovered that a large part of our home was no longer being used. That gave us the idea of converting the garage into an attractive bed & breakfast.\n\nWhat started as a lovely plan soon grew into an extensive process involving permits, construction drawings, an architect, a website and a domain name. The to-do list kept getting longer, but the result was worth it.\n\nThanks to friends and family, who stayed with us as our very first trial guests, we gained the confidence that we had created something special. Of course, we are still learning every day, but above all we look forward to offering our guests a warm and comfortable stay.\n\nWe hope to welcome you soon.",
+    "signature": "Marcel & Hennie",
+    "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh"
+  },
+  "RoomSection": {
+    "title": "Room",
+    "intro": "Browse the room photos and get a feel for your stay.",
+    "showMore": "Show more",
+    "imageAlt": "Room photo {index}",
+    "highlights": [
+      "20 m²",
+      "Private bathroom",
+      "Air conditioning",
+      "Entirely on the ground floor",
+      "Private entrance",
+      "Free Wi-Fi",
+      "TV with streaming services"
+    ]
+  },
+  "AreaSection": {
+    "title": "Around the B&B",
+    "intro": "Our B&B is in a quiet and convenient part of The Hague. The beach, nature and the city centre are easy to reach by bike, car or public transport.",
+    "empty": "Add places in the translations to populate this overview.",
+    "accessibility": {
+      "title": "Getting here & parking",
+      "paragraphs": [
+        "Our B&B is easy to reach both by car and by public transport. We offer free parking on our own property right in front of the B&B. There is also secure space to store bicycles.",
+        "Would you like to explore the area by bike? You can easily rent bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
+        "We are happy to help with practical advice and tips for scenic routes and useful local connections."
+      ],
+      "linkLabel": "Bike rental at Orie Rijwielen",
+      "linkHref": "mailto:verhuur@orierijwielen.nl"
+    },
+    "places": [
+      {
+        "name": "The Hague city centre",
+        "category": "City & culture",
+        "imageSrc": "/den-haag-hofvijver.jpg",
+        "description": "Ideal for shopping, museums, historic buildings and lively squares. The city centre includes the Binnenhof and many of The Hague's best-known sights.",
+        "linkLabel": "Top 10 highlights in The Hague",
+        "linkHref": "https://denhaag.com/en/tips/top-10-highlights-in-the-hague"
+      },
+      {
+        "name": "Kijkduin",
+        "category": "Beach & relaxation",
+        "imageSrc": "/kijkduin.jpg",
+        "distance": "Walking and cycling distance",
+        "description": "You can be on the beach within minutes by bike. Kijkduin is known for its quieter beaches and welcoming beach pavilions."
+      },
+      {
+        "name": "Scheveningen",
+        "category": "Beach & nightlife",
+        "imageSrc": "/scheveningen.jpg",
+        "description": "Easy to reach by public transport or bicycle. Here you will find the Circustheater and the iconic Pier, among other attractions. In high season we advise against coming by car because of crowds and limited parking."
+      },
+      {
+        "name": "Ockenburgh estate",
+        "category": "Nature",
+        "imageSrc": "/landgoed-ockenburgh.jpeg",
+        "distance": "Walking distance",
+        "description": "A beautiful green estate with woodland and walking paths, ideal for a relaxing walk. The estate has a restaurant and cafe, and live music is organised regularly."
+      },
+      {
+        "name": "Cycling routes",
+        "category": "Active",
+        "imageSrc": "/duinen.jpg",
+        "description": "Several cycling junction routes connect to the national network nearby, including 21, 22 and 23 towards Kijkduin and the dunes, and 17 and 18 towards Westland and the southern coastal route. From here you can easily cycle to Westduinpark, Westland, Hoek van Holland or Meijendel."
+      }
+    ]
+  },
+  "TarievenSection": {
+    "title": "Rates",
+    "intro": "Overview of room prices and stay conditions.",
+    "ratesTitle": "Seasonal rates",
+    "ratesFootnotePrimary": "Rates apply to 2 guests and include breakfast.",
+    "ratesFootnoteSecondary": "Bookings for 1 guest receive a discount of EUR 15.00 per night.",
+    "conditionsTitle": "Booking at a glance",
+    "conditionsIntro": "The main stay rules are summarised here. The full conditions are available on a separate page.",
+    "conditionsAcceptance": "By booking, the guest confirms that they have read and accepted the full conditions.",
+    "conditionsLink": "View full conditions",
+    "rates": [
+      {
+        "label": "Low season (November through March)",
+        "price": "EUR 125.00 / night"
+      },
+      {
+        "label": "High season (April through October)",
+        "price": "EUR 145.00 / night"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Payment",
+        "body": "Bookings made through our website are confirmed once full payment has been received."
+      },
+      {
+        "title": "Weekend stays",
+        "body": "From Friday through Sunday, a minimum stay of two nights applies."
+      },
+      {
+        "title": "Cancellation",
+        "body": "In the event of cancellation or no-show, 100% of the reservation amount is due."
+      },
+      {
+        "title": "Arrival and departure",
+        "body": "Check-in is available between 15:00 and 19:00, and check-out is no later than 11:00."
+      },
+      {
+        "title": "House rules",
+        "body": "Adults only, no smoking indoors, and no pets allowed."
+      }
+    ]
+  },
+  "GoogleMapsSection": {
+    "title": "Location",
+    "intro": "View Bed & Breakfast Klein Ockenburgh on the map.",
+    "iframeTitle": "Google Maps location"
+  },
+  "ReservationSection": {
+    "title": "Reservation",
+    "intro": "Use the reservation module below to check availability directly and book your stay easily on our website.",
+    "providerLogoAlt": "Bedandbreakfast.nl",
+    "eyebrow": "Listed with",
+    "providerTitle": "We are also listed on Bedandbreakfast.nl",
+    "providerDescription": "Our accommodation is also listed on Bedandbreakfast.nl. This adds extra credibility and shows that we are visible on a trusted platform as well.",
+    "providerConfirmation": "View our public Bedandbreakfast.nl page for extra details, reviews and availability.",
+    "providerAlternative": "Prefer to book through Bedandbreakfast.nl instead? You can do so via the link below.",
+    "providerLink": "View our listing on Bedandbreakfast.nl",
+    "iframeTitle": "Reservation module",
+    "bookingNotice": "By making a reservation, the guest confirms that they have read and agree to our general conditions.",
+    "bookingNoticeLink": "Read the full conditions",
+    "paymentTitle": "Booking and payment",
+    "paymentParagraphs": [
+      "You can book via our website or via bedandbreakfast.nl. If you book through our website: after receiving your reservation, we will send a confirmation by email with an invoice and payment instructions. The reservation is confirmed upon receipt of full payment.",
+      "Any additional costs incurred during your stay must be settled at checkout. Payment can be made in cash or digitally via a payment request.",
+      "In the event of late payment, the guest is in default by operation of law. Any reasonable collection and legal costs will be charged to the guest in accordance with statutory regulations."
+    ]
+  },
+  "FooterSection": {
+    "description": "Bed & Breakfast Klein Ockenburgh is a small-scale stay in The Hague, close to the beach, dunes and the city.",
+    "contact": {
+      "email": "Email: info@kleinockenburgh.nl",
+      "phone": "Phone: +31 70 123 45 67",
+      "address": "Address: Mockingbirdlaan 12, 2554 XX The Hague"
+    },
+    "details": {
+      "title": "Stay details",
+      "items": {
+        "registeredName": {
+          "label": "Name",
+          "value": "Bed & Breakfast Klein Ockenburgh"
+        },
+        "breakfast": {
+          "label": "Breakfast",
+          "value": "Fresh breakfast included every day"
+        },
+        "parking": {
+          "label": "Parking",
+          "value": "Free parking on site"
+        },
+        "checkIn": {
+          "label": "Check-in",
+          "value": "15:00 - 19:00, outside these hours by arrangement"
+        }
+      }
+    },
+    "quickLinks": {
+      "title": "Quick links",
+      "home": "Home",
+      "about": "About",
+      "room": "Room",
+      "area": "Area",
+      "rates": "Rates",
+      "reservation": "Reservation"
+    },
+    "legal": {
+      "conditions": "Terms & conditions"
+    },
+    "listingNote": "Our Bedandbreakfast.nl listing is available. Direct booking and availability can also be checked via our reservation section.",
+    "bottom": {
+      "copyright": "© 2026 Bed & Breakfast Klein Ockenburgh. All rights reserved.",
+      "note": "A personal stay in The Hague, close to the beach, city and nature."
+    }
+  },
+  "ConditionsMetadata": {
+    "title": "Terms & conditions | Bed & Breakfast Klein Ockenburgh",
+    "description": "Read the general terms and conditions of Bed & Breakfast Klein Ockenburgh, including payment, cancellation, house rules and liability."
+  },
+  "ConditionsPage": {
+    "backLink": "Back to home",
+    "eyebrow": "Terms & conditions",
+    "title": "Conditions of B&B Klein Ockenburgh",
+    "intro": "We do everything we can to make your stay as pleasant as possible. To keep expectations clear for both sides, the conditions below apply to every reservation.",
+    "acceptanceTitle": "Agreement when booking",
+    "acceptanceBody": "By making a booking, the guest confirms that they have read and agree to these general conditions.",
+    "quickFactsTitle": "In short",
+    "quickFacts": [
+      "Weekend stays require a minimum of 2 nights",
+      "A booking on our website is final after full payment",
+      "Adults only, no pets and no smoking indoors",
+      "Cancellation and no-show: 100% of the reservation amount"
+    ],
+    "sections": [
+      {
+        "title": "Rates and tourist tax",
+        "paragraphs": [
+          "Our rates are based on one night for two guests, including breakfast and unlimited coffee and tea during the stay.",
+          "All prices include the applicable VAT rate and exclude tourist tax. Tourist tax is set by the municipality of The Hague and in 2026 amounts to EUR 6.20 per person per night."
+        ]
+      },
+      {
+        "title": "Check-in and check-out",
+        "paragraphs": [
+          "Check-in is available between 15:00 and 19:00. Arrival outside these hours is only possible by prior arrangement.",
+          "Check-out must take place no later than 11:00."
+        ]
+      },
+      {
+        "title": "Booking and payment",
+        "paragraphs": [
+          "Bookings can be made through our website or via bedandbreakfast.nl. When you book through our website, we will send a confirmation by email with the invoice and payment instructions after receiving the reservation. The reservation is final once full payment has been received.",
+          "Any additional costs incurred during the stay must be settled at check-out. Payment can be made in cash or digitally via a payment request.",
+          "If payment is not made on time, the guest is automatically in default by law. Any reasonable collection and legal costs will be charged to the guest in accordance with the applicable legal rules.",
+          "We reserve the right to request a security deposit to cover possible damage."
+        ]
+      },
+      {
+        "title": "Minimum stay",
+        "paragraphs": [
+          "For our B&B, a minimum stay of two nights applies during the weekend, from Friday through Sunday.",
+          "No minimum stay applies on other days unless stated otherwise."
+        ]
+      },
+      {
+        "title": "Cancellation and no-show",
+        "paragraphs": [
+          "If the guest cancels, 100% of the reservation amount is due.",
+          "In the event of a no-show, 100% of the reservation amount will also be charged.",
+          "If the reservation was made through an external booking platform, the cancellation must be processed through that platform.",
+          "In the event of force majeure on the side of the B&B, such as fire, government measures or other unforeseen circumstances, we reserve the right to cancel the reservation. In that case, the guest will receive a refund of the amount paid or a voucher for the same value."
+        ]
+      },
+      {
+        "title": "House rules",
+        "paragraphs": [
+          "We kindly ask our guests to treat the accommodation, inventory and surroundings with respect.",
+          "Smoking is not allowed indoors. Smoking outside is of course permitted.",
+          "Our B&B is adults only and is not equipped for children.",
+          "Pets are not allowed.",
+          "The number of guests may never exceed the number stated in the reservation confirmation.",
+          "Parties or gatherings are not allowed.",
+          "If the house rules are violated, we reserve the right to terminate the stay immediately without refund of any amounts paid.",
+          "The lead booker is responsible for all fellow guests and must ensure that they are aware of these conditions."
+        ]
+      },
+      {
+        "title": "Liability",
+        "paragraphs": [
+          "The stay and the use of the accommodation and facilities are entirely at the guest's own risk.",
+          "The B&B is not liable for loss, theft or damage to guests' property, unless there is intent or gross negligence on the part of the B&B.",
+          "The B&B is only liable for direct damage that is the direct result of an attributable failure. Any liability for indirect damage or consequential loss is excluded.",
+          "If liability is established, it is limited to the amount paid out under the liability insurance, plus the applicable deductible."
+        ]
+      },
+      {
+        "title": "Damage and loss",
+        "paragraphs": [
+          "The guest is liable for damage caused to the accommodation or inventory during the stay.",
+          "We kindly ask that any damage be reported immediately so we can work together on an appropriate solution.",
+          "In the event of intentional damage or theft, a police report will be filed and the full repair or replacement costs will be charged.",
+          "If keys are lost, the full cost of replacing keys and locks will be charged."
+        ]
+      },
+      {
+        "title": "Parking and bicycles",
+        "paragraphs": [
+          "Parking and bicycle storage are entirely at your own risk.",
+          "The B&B is not liable for damage, loss or theft of vehicles or belongings unless there is intent or gross negligence."
+        ]
+      },
+      {
+        "title": "Camera surveillance",
+        "paragraphs": [
+          "Camera surveillance may be used on the outdoor grounds for the protection of guests and property.",
+          "Images are only used in the event of incidents and are processed in accordance with applicable privacy legislation."
+        ]
+      },
+      {
+        "title": "Breakfast",
+        "paragraphs": [
+          "Do you have dietary requirements or allergies? Please let us know no later than 48 hours before arrival so we can take them into account.",
+          "Breakfast is served between 08:00 and 10:00."
+        ]
+      },
+      {
+        "title": "Cleaning",
+        "paragraphs": [
+          "For multi-day stays, interim cleaning can be arranged in consultation.",
+          "This is only done on request, so that we can respect your rest and privacy."
+        ]
+      }
+    ]
+  }
+}

@@ -14,23 +14,27 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Reveal from "@/components/Reveal";
+import Lightbox from "@/components/Lightbox";
 
-const roomImages = Array.from({ length: 16 }, (_, index) => ({
-  src: `/room${index + 1}.jpg`,
-}));
-
-type RoomImageLayout = {
-  rowSpan?: 1 | 2 | 3;
-  aspectClass?: string;
-};
-
-const roomImageLayoutMap: Record<string, RoomImageLayout> = {
-  // Configure here which images should span two rows on md+ screens.
-  // Example: "/room3.jpg": { rowSpan: 2, aspectClass: "aspect-[3/2]" },
-  "/room3.jpg": { rowSpan: 3 },
-  "/room8.jpg": { rowSpan: 2 },
-  "/room13.jpg": { rowSpan: 2 },
-};
+// Ordered list of room images. Mobile renders in this exact order.
+// rowSpan controls desktop grid row span (default 1).
+const roomImages: { src: string; rowSpan?: 1 | 2 | 3 }[] = [
+  { src: "/room12.jpg", rowSpan: 2 },
+  { src: "/room11.jpg", rowSpan: 1 },
+  { src: "/room5.jpg", rowSpan: 2 },
+  { src: "/room10.jpg", rowSpan: 1 },
+  { src: "/room6.jpg", rowSpan: 2 },
+  { src: "/room7.jpg", rowSpan: 1 },
+  { src: "/room3.jpg", rowSpan: 3 },
+  { src: "/room9.jpg", rowSpan: 2 },
+  { src: "/room8.jpg", rowSpan: 2 },
+  { src: "/room2.jpg", rowSpan: 1 },
+  { src: "/room1.jpg", rowSpan: 1 },
+  { src: "/room4.jpg", rowSpan: 2 },
+  { src: "/room14.jpg", rowSpan: 2 },
+  { src: "/room15.jpg", rowSpan: 1 },
+  { src: "/room16.jpg", rowSpan: 2 },
+];
 
 const MOBILE_BATCH_SIZE = 4;
 
@@ -55,6 +59,7 @@ export default function RoomSection() {
       ? roomImages.length
       : MOBILE_BATCH_SIZE,
   );
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 639px)");
@@ -90,7 +95,7 @@ export default function RoomSection() {
     <section
       key={locale}
       id="room"
-      className="scroll-mt-24 bg-night-forest text-candlelight py-35"
+      className="scroll-mt-24 bg-midnight-grove text-candlelight py-20 md:py-35"
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         <Reveal className="mb-6 max-w-3xl">
@@ -100,50 +105,56 @@ export default function RoomSection() {
           <p className="mt-3 text-base text-candlelight/80">{t("intro")}</p>
         </Reveal>
 
-        <Reveal delayMs={60} className="my-16">
-          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-            {highlights.map((label, index) => {
-              const Icon = roomHighlightIcons[index];
-              if (!Icon) return null;
+        <div className="my-16 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {highlights.map((label, index) => {
+            const Icon = roomHighlightIcons[index];
+            if (!Icon) return null;
 
-              return (
-                <div
-                  key={`${label}-${index}`}
-                  className="flex items-center gap-3 rounded-3xl border border-forest-green/35 bg-midnight-grove/55 px-4 py-4 shadow-[0_14px_30px_rgba(0,0,0,0.12)] backdrop-blur-sm"
-                >
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-forest-green/18 text-aged-parchment">
+            const direction = index % 2 === 0 ? "left" : "right";
+
+            return (
+              <Reveal
+                key={`${label}-${index}`}
+                direction={direction}
+                distance={40}
+                delayMs={index * 80}
+              >
+                <div className="flex items-center gap-3 rounded-3xl border border-forest-green/15 bg-candlelight px-4 py-4 shadow-[0_14px_30px_rgba(0,0,0,0.12)]">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-forest-green/15 text-night-forest">
                     <Icon className="size-4" />
                   </div>
-                  <p className="text-sm leading-relaxed text-candlelight/88">
+                  <p className="text-sm leading-relaxed text-night-forest/85">
                     {label}
                   </p>
                 </div>
-              );
-            })}
-          </div>
-        </Reveal>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
 
       <div className="w-full px-4 pb-8 sm:px-6 md:pb-16">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:auto-rows-[140px] md:grid-cols-3 lg:grid-cols-4">
           {visibleImages.map((image, index) => {
-            const layout = roomImageLayoutMap[image.src];
             const rowSpanClass =
-              layout?.rowSpan === 3
+              image.rowSpan === 3
                 ? "md:row-span-3"
-                : layout?.rowSpan === 2
+                : image.rowSpan === 2
                   ? "md:row-span-2"
                   : "";
-            const aspectClass = layout?.aspectClass ?? "aspect-[16/10]";
+            const aspectClass = "aspect-[16/10]";
 
             return (
               <Reveal
                 key={image.src}
                 delayMs={(index % 4) * 55}
-                className={`group relative overflow-hidden rounded-lg border border-forest-green/40 ${rowSpanClass}`}
+                className={`group relative cursor-pointer overflow-hidden rounded-lg border border-forest-green/40 ${rowSpanClass}`}
               >
-                <div
-                  className={`relative w-full ${aspectClass} md:h-full md:aspect-auto`}
+                <button
+                  type="button"
+                  onClick={() => setLightboxIndex(index)}
+                  className={`relative block w-full ${aspectClass} md:h-full md:aspect-auto`}
+                  aria-label={t("imageAlt", { index: index + 1 })}
                 >
                   <Image
                     src={image.src}
@@ -152,7 +163,7 @@ export default function RoomSection() {
                     sizes="(min-width: 1280px) 23vw, (min-width: 1024px) 31vw, (min-width: 640px) 48vw, 100vw"
                     className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
-                </div>
+                </button>
               </Reveal>
             );
           })}
@@ -171,6 +182,17 @@ export default function RoomSection() {
           </div>
         ) : null}
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={roomImages.map((img, i) => ({
+            src: img.src,
+            alt: t("imageAlt", { index: i + 1 }),
+          }))}
+          startIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
+      )}
     </section>
   );
 }

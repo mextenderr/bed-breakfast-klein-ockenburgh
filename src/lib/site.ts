@@ -1,4 +1,4 @@
-export const locales = ["nl-NL", "en-GB"] as const;
+export const locales = ["nl", "en"] as const;
 
 export type SiteLocale = (typeof locales)[number];
 
@@ -11,7 +11,7 @@ export const siteConfig: {
   bedAndBreakfastListingUrl: string;
 } = {
   name: "Bed & Breakfast Klein Ockenburgh",
-  defaultLocale: "nl-NL",
+  defaultLocale: "nl",
   locales,
   image: "/b&b-klein-ockenburgh.jpg",
   email: "info@kleinockenburgh.nl",
@@ -33,6 +33,7 @@ export function getSiteUrl() {
   );
 }
 
-export function getLocalizedPath(locale: SiteLocale) {
-  return `/${locale}`;
+export function getLocalizedPath(locale: SiteLocale, path = "") {
+  const normalizedPath = path.replace(/^\/+/, "");
+  return normalizedPath ? `/${locale}/${normalizedPath}` : `/${locale}`;
 }

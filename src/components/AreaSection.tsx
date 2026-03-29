@@ -61,7 +61,7 @@ export default function AreaSection() {
       id="area"
       className="scroll-mt-24 bg-candlelight text-night-forest"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-35 sm:px-6">
+      <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-35">
         <Reveal className="mb-8 max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight text-midnight-grove sm:text-4xl">
             {t("title")}

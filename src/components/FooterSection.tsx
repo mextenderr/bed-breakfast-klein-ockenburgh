@@ -2,17 +2,39 @@
 
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { Link, getPathname, usePathname } from "@/i18n/navigation";
 
 export default function FooterSection() {
   const locale = useLocale();
+  const pathname = usePathname();
   const t = useTranslations("FooterSection");
+  const isHomePage = pathname === "/";
+  const homePath = getPathname({ href: "/", locale });
   const quickLinks = [
-    { label: t("quickLinks.home"), href: "#hero" },
-    { label: t("quickLinks.about"), href: "#about" },
-    { label: t("quickLinks.room"), href: "#room" },
-    { label: t("quickLinks.area"), href: "#area" },
-    { label: t("quickLinks.rates"), href: "#tarieven" },
-    { label: t("quickLinks.reservation"), href: "#reservation" },
+    {
+      label: t("quickLinks.home"),
+      href: isHomePage ? "#hero" : `${homePath}#hero`,
+    },
+    {
+      label: t("quickLinks.about"),
+      href: isHomePage ? "#about" : `${homePath}#about`,
+    },
+    {
+      label: t("quickLinks.room"),
+      href: isHomePage ? "#room" : `${homePath}#room`,
+    },
+    {
+      label: t("quickLinks.area"),
+      href: isHomePage ? "#area" : `${homePath}#area`,
+    },
+    {
+      label: t("quickLinks.rates"),
+      href: isHomePage ? "#tarieven" : `${homePath}#tarieven`,
+    },
+    {
+      label: t("quickLinks.reservation"),
+      href: isHomePage ? "#reservation" : `${homePath}#reservation`,
+    },
   ] as const;
 
   return (
@@ -87,6 +109,12 @@ export default function FooterSection() {
                   {link.label}
                 </a>
               ))}
+              <Link
+                href="/conditions"
+                className="transition-colors hover:text-aged-parchment"
+              >
+                {t("legal.conditions")}
+              </Link>
             </nav>
 
             <div className="mt-6 rounded-3xl border border-forest-green/30 bg-midnight-grove/60 p-4 text-sm text-candlelight/78">
@@ -97,7 +125,15 @@ export default function FooterSection() {
 
         <div className="mt-8 flex flex-col gap-2 border-t border-forest-green/25 pt-5 text-xs text-candlelight/60 sm:flex-row sm:items-center sm:justify-between">
           <p>{t("bottom.copyright")}</p>
-          <p>{t("bottom.note")}</p>
+          <div className="flex flex-col gap-2 sm:items-end">
+            <Link
+              href="/conditions"
+              className="text-candlelight/72 transition-colors hover:text-aged-parchment"
+            >
+              {t("legal.conditions")}
+            </Link>
+            <p>{t("bottom.note")}</p>
+          </div>
         </div>
       </div>
     </footer>

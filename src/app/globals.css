@@ -12,8 +12,8 @@
   --color-forest-green: var(--forest-green);
   --color-aged-parchment: var(--aged-parchment);
   --color-candlelight: var(--candlelight);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-sans);
+  --font-sans: "Georgia", "Times New Roman", serif;
+  --font-mono: "Georgia", "Times New Roman", serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -161,9 +161,35 @@ html {
   transform: translateY(0);
 }
 
+.reveal-x {
+  opacity: 0;
+  transition:
+    opacity 600ms ease,
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-x-left {
+  transform: translateX(calc(-1 * var(--reveal-distance, 18px)));
+}
+
+.reveal-x-right {
+  transform: translateX(var(--reveal-distance, 18px));
+}
+
+.reveal-x-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
-  .reveal-visible {
+  .reveal-visible,
+  .reveal-x,
+  .reveal-x-left,
+  .reveal-x-right,
+  .reveal-x-visible {
     opacity: 1;
     transform: none;
     transition: none;

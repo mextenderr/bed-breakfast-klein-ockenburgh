@@ -30,15 +30,15 @@ export async function generateMetadata({
     alternates: {
       canonical: localizedPath,
       languages: {
-        "nl-NL": getLocalizedPath("nl-NL"),
-        "en-GB": getLocalizedPath("en-GB"),
+        nl: getLocalizedPath("nl"),
+        en: getLocalizedPath("en"),
         "x-default": getLocalizedPath(siteConfig.defaultLocale),
       },
     },
     openGraph: {
       type: "website",
-      locale: locale === "nl-NL" ? "nl_NL" : "en_GB",
-      alternateLocale: locale === "nl-NL" ? ["en_GB"] : ["nl_NL"],
+      locale: locale === "nl" ? "nl_NL" : "en_GB",
+      alternateLocale: locale === "nl" ? ["en_GB"] : ["nl_NL"],
       url: localizedPath,
       siteName: siteConfig.name,
       title: t("title"),
