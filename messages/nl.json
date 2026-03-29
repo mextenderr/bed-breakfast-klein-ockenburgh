@@ -7,6 +7,7 @@
     "area": "Omgeving",
     "rates": "Tarieven",
     "reservation": "Reserveren",
+    "conditions": "Voorwaarden",
     "menuToggle": "Menu openen of sluiten",
     "languageLabel": "Taal"
   },
@@ -55,7 +56,8 @@
     "title": "Over ons",
     "body": "Na een intensieve verbouwing van zeven maanden zijn wij trots om onze B&B te presenteren.\n\nToen onze twee kinderen op zichzelf gingen wonen, ontdekten we dat een groot deel van ons huis onbenut bleef. Dat bracht ons op het idee om de garage om te bouwen tot een sfeervolle bed & breakfast.\n\nWat begon als een mooi plan, groeide al snel uit tot een uitgebreid traject met vergunningen, bouwtekeningen, een architect, een website en een domeinnaam. De to-dolijst werd steeds langer, maar het resultaat mag er zijn.\n\nDankzij vrienden en familie, die als eerste proefgasten bij ons verbleven, kregen we het vertrouwen dat we iets bijzonders hebben neergezet. Natuurlijk leren we nog elke dag bij, maar we kijken er vooral naar uit om onze gasten een warm en comfortabel verblijf te bieden.\n\nWe hopen u binnenkort van harte te mogen verwelkomen.",
     "signature": "Marcel & Hennie",
-    "imageAlt": "De hosts van Bed & Breakfast Klein Ockenburgh"
+    "imageAlt": "De hosts van Bed & Breakfast Klein Ockenburgh",
+    "imageAltExterior": "Buitenaanzicht van Bed & Breakfast Klein Ockenburgh"
   },
   "RoomSection": {
     "title": "Kamer",

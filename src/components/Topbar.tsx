@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { getPathname, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 
 const SUPPORTED_LOCALES = ["nl", "en"] as const;
 
@@ -184,6 +185,13 @@ export default function Topbar() {
                 {item.label}
               </button>
             ))}
+            <Link
+              href="/conditions"
+              onClick={() => setMenuOpen(false)}
+              className="rounded-xl px-3 py-2 text-left text-sm font-medium text-candlelight/84 transition-colors duration-200 hover:bg-candlelight/8 hover:text-aged-parchment focus-visible:outline-none focus-visible:bg-candlelight/8"
+            >
+              {t("conditions")}
+            </Link>
 
             <div className="mt-2 flex items-center justify-start gap-2">
               {SUPPORTED_LOCALES.map((language) => (

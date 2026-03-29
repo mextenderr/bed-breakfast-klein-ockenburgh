@@ -7,6 +7,7 @@
     "area": "Area",
     "rates": "Rates",
     "reservation": "Reservation",
+    "conditions": "Conditions",
     "menuToggle": "Toggle menu",
     "languageLabel": "Language"
   },
@@ -55,7 +56,8 @@
     "title": "About us",
     "body": "After an intensive seven-month renovation, we are proud to present our B&B.\n\nWhen our two children moved out, we discovered that a large part of our home was no longer being used. That gave us the idea of converting the garage into an attractive bed & breakfast.\n\nWhat started as a lovely plan soon grew into an extensive process involving permits, construction drawings, an architect, a website and a domain name. The to-do list kept getting longer, but the result was worth it.\n\nThanks to friends and family, who stayed with us as our very first trial guests, we gained the confidence that we had created something special. Of course, we are still learning every day, but above all we look forward to offering our guests a warm and comfortable stay.\n\nWe hope to welcome you soon.",
     "signature": "Marcel & Hennie",
-    "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh"
+    "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh",
+    "imageAltExterior": "Exterior view of Bed & Breakfast Klein Ockenburgh"
   },
   "RoomSection": {
     "title": "Room",
