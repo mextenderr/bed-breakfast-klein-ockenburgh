@@ -95,7 +95,7 @@ export default function RoomSection() {
     <section
       key={locale}
       id="room"
-      className="scroll-mt-24 bg-midnight-grove text-candlelight py-20 md:py-35"
+      className="scroll-mt-24 overflow-x-clip bg-midnight-grove text-candlelight py-20 md:py-35"
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         <Reveal className="mb-6 max-w-3xl">
