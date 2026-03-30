@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import AreaSection from "@/components/AreaSection";
 import AboutSection from "@/components/AboutSection";
 import FooterSection from "@/components/FooterSection";
+import DroneVideoSection from "@/components/DroneVideoSection";
 import RoomSection from "@/components/RoomSection";
 import ReservationSection from "@/components/ReservationSection";
 import SellingPointsSection from "@/components/SellingPointsSection";
@@ -48,6 +49,7 @@ export default async function Home({
       <HeroHeader />
       <SellingPointsSection />
       <AboutSection />
+      <DroneVideoSection />
       <RoomSection />
       <AreaSection />
       <TarievenSection />

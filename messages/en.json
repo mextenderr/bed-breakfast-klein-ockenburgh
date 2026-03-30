@@ -59,6 +59,9 @@
     "imageAlt": "Hosts of Bed & Breakfast Klein Ockenburgh",
     "imageAltExterior": "Exterior view of Bed & Breakfast Klein Ockenburgh"
   },
+  "DroneVideoSection": {
+    "caption": "Nestled in the green heart of The Hague"
+  },
   "RoomSection": {
     "title": "Room",
     "intro": "Browse the room photos and get a feel for your stay.",
@@ -151,16 +154,12 @@
         "body": "Bookings made through our website are confirmed once full payment has been received."
       },
       {
-        "title": "Weekend stays",
-        "body": "From Friday through Sunday, a minimum stay of two nights applies."
-      },
-      {
         "title": "Cancellation",
         "body": "In the event of cancellation or no-show, 100% of the reservation amount is due."
       },
       {
         "title": "Arrival and departure",
-        "body": "Check-in is available between 15:00 and 19:00, and check-out is no later than 11:00."
+        "body": "Check-in is available between 15:00 and 19:00, and check-out is available between 08:00 and 11:00."
       },
       {
         "title": "House rules",
@@ -252,7 +251,6 @@
     "acceptanceBody": "By making a booking, the guest confirms that they have read and agree to these general conditions.",
     "quickFactsTitle": "In short",
     "quickFacts": [
-      "Weekend stays require a minimum of 2 nights",
       "A booking on our website is final after full payment",
       "Adults only, no pets and no smoking indoors",
       "Cancellation and no-show: 100% of the reservation amount"
@@ -269,7 +267,7 @@
         "title": "Check-in and check-out",
         "paragraphs": [
           "Check-in is available between 15:00 and 19:00. Arrival outside these hours is only possible by prior arrangement.",
-          "Check-out must take place no later than 11:00."
+          "Check-out is available between 08:00 and 11:00."
         ]
       },
       {
@@ -279,13 +277,6 @@
           "Any additional costs incurred during the stay must be settled at check-out. Payment can be made in cash or digitally via a payment request.",
           "If payment is not made on time, the guest is automatically in default by law. Any reasonable collection and legal costs will be charged to the guest in accordance with the applicable legal rules.",
           "We reserve the right to request a security deposit to cover possible damage."
-        ]
-      },
-      {
-        "title": "Minimum stay",
-        "paragraphs": [
-          "For our B&B, a minimum stay of two nights applies during the weekend, from Friday through Sunday.",
-          "No minimum stay applies on other days unless stated otherwise."
         ]
       },
       {

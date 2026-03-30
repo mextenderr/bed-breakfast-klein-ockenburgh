@@ -59,6 +59,9 @@
     "imageAlt": "De hosts van Bed & Breakfast Klein Ockenburgh",
     "imageAltExterior": "Buitenaanzicht van Bed & Breakfast Klein Ockenburgh"
   },
+  "DroneVideoSection": {
+    "caption": "Gelegen in het groene hart van Den Haag"
+  },
   "RoomSection": {
     "title": "Kamer",
     "intro": "Bekijk alle foto's van de kamer en proef de sfeer van het verblijf.",
@@ -151,16 +154,12 @@
         "body": "Boekingen via onze website zijn definitief na ontvangst van de volledige betaling."
       },
       {
-        "title": "Weekendverblijf",
-        "body": "Van vrijdag t/m zondag geldt een minimale verblijfsduur van twee nachten."
-      },
-      {
         "title": "Annulering",
         "body": "Bij annulering of no-show is 100% van het reserveringsbedrag verschuldigd."
       },
       {
         "title": "Aankomst en vertrek",
-        "body": "Check-in is mogelijk tussen 15:00 en 19:00 uur, check-out uiterlijk om 11:00 uur."
+        "body": "Check-in is mogelijk tussen 15:00 en 19:00 uur, check-out tussen 08:00 en 11:00 uur."
       },
       {
         "title": "Huisregels",
@@ -252,7 +251,6 @@
     "acceptanceBody": "Door het maken van een boeking verklaart de gast kennis te hebben genomen van en akkoord te gaan met deze algemene voorwaarden.",
     "quickFactsTitle": "In het kort",
     "quickFacts": [
-      "Weekend: minimaal verblijf van 2 nachten",
       "Boeking via onze website is definitief na volledige betaling",
       "Adults only, geen huisdieren en binnen niet roken",
       "Annulering en no-show: 100% van het reserveringsbedrag"
@@ -269,7 +267,7 @@
         "title": "Check-in en check-out",
         "paragraphs": [
           "Check-in is mogelijk tussen 15:00 en 19:00 uur. Aankomst buiten deze tijden is uitsluitend mogelijk in overleg.",
-          "Uitchecken dient uiterlijk om 11:00 uur te gebeuren."
+          "Uitchecken is mogelijk tussen 08:00 en 11:00 uur."
         ]
       },
       {
@@ -279,13 +277,6 @@
           "Eventuele extra kosten die tijdens het verblijf worden gemaakt, dienen bij uitchecken te worden voldaan. Betaling kan contant of digitaal via betaalverzoek.",
           "Bij niet-tijdige betaling is de gast van rechtswege in verzuim. Eventuele redelijke incasso- en gerechtelijke kosten komen voor rekening van de gast conform de wettelijke regels.",
           "Wij behouden ons het recht voor een borgsom te vragen ter dekking van eventuele schade."
-        ]
-      },
-      {
-        "title": "Minimale verblijfsduur",
-        "paragraphs": [
-          "Voor onze B&B geldt in het weekend, van vrijdag t/m zondag, een minimale verblijfsduur van twee nachten.",
-          "Voor overige dagen geldt geen minimale verblijfsduur, tenzij anders aangegeven."
         ]
       },
       {
