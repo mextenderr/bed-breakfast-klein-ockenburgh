@@ -92,12 +92,12 @@ export default function AreaSection() {
                       />
                     </div>
                     <div className="p-5">
-                      <div className="mb-2 flex items-start justify-between gap-4">
+                      <div className="mb-2 flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
                         <h3 className="text-lg font-semibold text-midnight-grove">
                           {place.name}
                         </h3>
                         {place.distance ? (
-                          <span className="shrink-0 rounded-full bg-forest-green/15 px-2 py-1 text-xs font-medium text-midnight-grove">
+                          <span className="rounded-full bg-forest-green/15 px-2 py-1 text-xs font-medium text-midnight-grove">
                             {place.distance}
                           </span>
                         ) : null}
