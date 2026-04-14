@@ -85,7 +85,7 @@
       "title": "Getting here & parking",
       "paragraphs": [
         "Our B&B is easy to reach both by car and by public transport. We offer free parking on our own property right in front of the B&B. There is also secure space to store bicycles.",
-        "Would you like to explore the area by bike? You can easily rent bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
+        "Would you like to explore the area by bike? We recommend downloading the FIETSKNOOPPUNT app in advance. You can also easily rent bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
         "We are happy to help with practical advice and tips for scenic routes and useful local connections."
       ],
       "linkLabel": "Bike rental at Orie Rijwielen",
@@ -125,6 +125,12 @@
         "category": "Active",
         "imageSrc": "/duinen.jpg",
         "description": "Several cycling junction routes connect to the national network nearby, including 21, 22 and 23 towards Kijkduin and the dunes, and 17 and 18 towards Westland and the southern coastal route. From here you can easily cycle to Westduinpark, Westland, Hoek van Holland or Meijendel."
+      },
+      {
+        "name": "Chilling at the beach",
+        "category": "Beach & relaxation",
+        "imageSrc": "/suiderstrand.jpg",
+        "description": "Suiderstrand, a wonderful spot to relax by the coast. Enjoy the sun, sea and wide sandy beach just a short distance from our B&B."
       }
     ]
   },
@@ -159,7 +165,7 @@
       },
       {
         "title": "Arrival and departure",
-        "body": "Check-in is available between 15:00 and 19:00, and check-out is available between 08:00 and 11:00."
+        "body": "Check-in is available between 13:00 and 14:00. Outside these hours, we use a key safe and will welcome you later. Check-out is between 08:00 and 10:30."
       },
       {
         "title": "House rules",
@@ -195,7 +201,7 @@
   "FooterSection": {
     "description": "Bed & Breakfast Klein Ockenburgh is a small-scale stay in The Hague, close to the beach, dunes and the city.",
     "contact": {
-      "email": "Email: info@kleinockenburgh.com",
+      "email": "Email: marcelbertram@ziggo.nl",
       "phone": "Phone: +31 6 24 68 37 72",
       "address": "Address: Jean Monnetpad 66, 2553 TW The Hague"
     },
@@ -216,7 +222,7 @@
         },
         "checkIn": {
           "label": "Check-in",
-          "value": "15:00 - 19:00, outside these hours by arrangement"
+          "value": "13:00 - 14:00, outside these hours via key safe"
         }
       }
     },
@@ -266,8 +272,8 @@
       {
         "title": "Check-in and check-out",
         "paragraphs": [
-          "Check-in is available between 15:00 and 19:00. Arrival outside these hours is only possible by prior arrangement.",
-          "Check-out is available between 08:00 and 11:00."
+          "Check-in is available between 13:00 and 14:00. Outside these hours, we use a key safe and will welcome you later.",
+          "Check-out is available between 08:00 and 10:30."
         ]
       },
       {
@@ -337,7 +343,7 @@
         "title": "Breakfast",
         "paragraphs": [
           "Do you have dietary requirements or allergies? Please let us know no later than 48 hours before arrival so we can take them into account.",
-          "Breakfast is served between 08:00 and 10:00."
+          "Breakfast is served between 08:00 and 09:30."
         ]
       },
       {

@@ -85,7 +85,7 @@
       "title": "Bereikbaarheid & parkeren",
       "paragraphs": [
         "Onze B&B is goed bereikbaar met zowel de auto als het openbaar vervoer. Voor de B&B hebben wij parkeergelegenheid op eigen terrein, waar u gratis kunt parkeren. Daarnaast is er de mogelijkheid om fietsen veilig bij ons te stallen.",
-        "Wilt u de omgeving per fiets verkennen? Dan kunt u eenvoudig fietsen huren bij Orie Rijwielen op 500 meter van onze B&B. Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
+        "Wilt u de omgeving per fiets verkennen? Het verdient de aanbeveling om de app FIETSKNOOPPUNT van te voren te downloaden. Daarnaast kunt u eenvoudig fietsen huren bij Orie Rijwielen op 500 meter van onze B&B. Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
         "Wij denken graag met u mee en geven met plezier tips over mooie routes en handige verbindingen in de omgeving."
       ],
       "linkLabel": "Fietsverhuur bij Orie Rijwielen",
@@ -125,6 +125,12 @@
         "category": "Actief",
         "imageSrc": "/duinen.jpg",
         "description": "In de directe omgeving sluiten meerdere fietsknooppunten aan op het landelijke netwerk, waaronder 21, 22 en 23 richting Kijkduin en de duinen, en 17 en 18 richting het Westland en de zuidelijke kustroute. Vanuit hier fietst u eenvoudig naar onder andere Westduinpark, Westland, Hoek van Holland of Meijendel."
+      },
+      {
+        "name": "Chillen op het strand",
+        "category": "Strand & ontspanning",
+        "imageSrc": "/suiderstrand.jpg",
+        "description": "Suiderstrand, een heerlijke plek om te ontspannen aan de kust. Geniet van de zon, zee en het brede strand op korte afstand van onze B&B."
       }
     ]
   },
@@ -159,7 +165,7 @@
       },
       {
         "title": "Aankomst en vertrek",
-        "body": "Check-in is mogelijk tussen 15:00 en 19:00 uur, check-out tussen 08:00 en 11:00 uur."
+        "body": "Check-in is mogelijk tussen 13:00 en 14:00 uur, buiten deze tijden werken we met een sleutelkluisje en verwelkomen we u later. Uitchecken tussen 08:00 en 10:30 uur."
       },
       {
         "title": "Huisregels",
@@ -195,7 +201,7 @@
   "FooterSection": {
     "description": "Bed & Breakfast Klein Ockenburgh is een kleinschalig verblijf in Den Haag, dicht bij strand, duinen en de stad.",
     "contact": {
-      "email": "E-mail: info@kleinockenburgh.com",
+      "email": "E-mail: marcelbertram@ziggo.nl",
       "phone": "Telefoon: 06 24 68 37 72",
       "address": "Adres: Jean Monnetpad 66, 2553 TW Den Haag"
     },
@@ -216,7 +222,7 @@
         },
         "checkIn": {
           "label": "Inchecken",
-          "value": "15:00 - 19:00, daarbuiten in overleg"
+          "value": "13:00 - 14:00, daarbuiten via sleutelkluisje"
         }
       }
     },
@@ -266,8 +272,8 @@
       {
         "title": "Check-in en check-out",
         "paragraphs": [
-          "Check-in is mogelijk tussen 15:00 en 19:00 uur. Aankomst buiten deze tijden is uitsluitend mogelijk in overleg.",
-          "Uitchecken is mogelijk tussen 08:00 en 11:00 uur."
+          "Check-in is mogelijk tussen 13:00 en 14:00 uur. Buiten deze tijden werken we met een sleutelkluisje en verwelkomen we u later.",
+          "Uitchecken is mogelijk tussen 08:00 en 10:30 uur."
         ]
       },
       {
@@ -337,7 +343,7 @@
         "title": "Ontbijt",
         "paragraphs": [
           "Heb je dieetwensen of allergieën? Laat het ons dan graag uiterlijk 48 uur vóór aankomst weten, zodat wij hier rekening mee kunnen houden.",
-          "Het ontbijt wordt geserveerd tussen 08:00 en 10:00 uur."
+          "Het ontbijt wordt geserveerd tussen 08:00 en 09:30 uur."
         ]
       },
       {

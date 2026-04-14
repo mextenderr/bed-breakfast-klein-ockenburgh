@@ -14,7 +14,7 @@ export const siteConfig: {
   defaultLocale: "nl",
   locales,
   image: "/b&b-klein-ockenburgh.jpg",
-  email: "info@kleinockenburgh.com",
+  email: "marcelbertram@ziggo.nl",
   bedAndBreakfastListingUrl:
     "https://www.bedandbreakfast.nl/nl/a/jI6pxRAvIDuR/bb-klein-ockenburgh",
 };
