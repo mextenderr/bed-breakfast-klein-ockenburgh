@@ -18,18 +18,21 @@
   "HomePage": {
     "eyebrow": "Bed & Breakfast",
     "heroTitle": "Klein Ockenburgh",
+    "heroSubtitle": "Bed & Breakfast in The Hague, within walking and cycling distance of Kijkduin beach",
     "ctaPrimary": "Reserve your stay",
     "ctaSecondary": "Discover the room",
     "scrollIndicator": "Scroll"
   },
   "Metadata": {
-    "title": "Bed & Breakfast Klein Ockenburgh | Official website",
-    "description": "Small-scale bed & breakfast in The Hague, close to the beach, dunes and the city. Includes breakfast, free parking and direct online booking.",
+    "title": "B&B near Kijkduin beach, The Hague | Bed & Breakfast Klein Ockenburgh",
+    "description": "Small-scale B&B in The Hague, within walking and cycling distance of Kijkduin beach. Stay includes breakfast, free parking, electric rental bikes and direct online booking.",
     "imageAlt": "Atmospheric impression of Bed & Breakfast Klein Ockenburgh in The Hague",
     "keywords": [
       "bed and breakfast the hague",
       "b&b the hague",
       "bed and breakfast kijkduin",
+      "b&b kijkduin",
+      "stay in kijkduin",
       "stay in the hague",
       "bed and breakfast near beach the hague",
       "klein ockenburgh",
@@ -40,7 +43,7 @@
     "items": [
       {
         "title": "Beautiful location",
-        "description": "Quietly situated near the beach, the city and green surroundings."
+        "description": "Quietly situated near Kijkduin beach, the city and green surroundings."
       },
       {
         "title": "Breakfast included",
@@ -69,6 +72,7 @@
     "imageAlt": "Room photo {index}",
     "highlights": [
       "20 m²",
+      "Close to Kijkduin beach",
       "Private bathroom",
       "Air conditioning",
       "Entirely on the ground floor",
@@ -78,18 +82,16 @@
     ]
   },
   "AreaSection": {
-    "title": "Around the B&B",
-    "intro": "Our B&B is in a quiet and convenient part of The Hague. The beach, nature and the city centre are easy to reach by bike, car or public transport.",
+    "title": "Around the B&B: Kijkduin and The Hague",
+    "intro": "Our B&B is in a quiet and convenient part of The Hague, within walking and cycling distance of Kijkduin beach. Nature and the city centre are easy to reach by bike, car or public transport.",
     "empty": "Add places in the translations to populate this overview.",
     "accessibility": {
       "title": "Getting here & parking",
       "paragraphs": [
         "Our B&B is easy to reach both by car and by public transport. We offer free parking on our own property right in front of the B&B. There is also secure space to store bicycles.",
-        "Would you like to explore the area by bike? We recommend downloading the FIETSKNOOPPUNT app in advance. You can also easily rent bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
+        "Would you like to explore the area by bike? We have two electric rental bikes available, which you can use for the whole day until midnight. Just let us know if you would like to rent one. We recommend downloading the FIETSKNOOPPUNT app in advance.",
         "We are happy to help with practical advice and tips for scenic routes and useful local connections."
-      ],
-      "linkLabel": "Bike rental at Orie Rijwielen",
-      "linkHref": "mailto:verhuur@orierijwielen.nl"
+      ]
     },
     "places": [
       {
@@ -137,7 +139,7 @@
   "TarievenSection": {
     "title": "Rates",
     "intro": "Overview of room prices and stay conditions.",
-    "ratesTitle": "Seasonal rates",
+    "ratesTitle": "Room rate",
     "ratesFootnotePrimary": "Rates apply to 2 guests and include breakfast.",
     "ratesFootnoteSecondary": "Bookings for 1 guest receive a discount of EUR 15.00 per night.",
     "conditionsTitle": "Booking at a glance",
@@ -146,11 +148,7 @@
     "conditionsLink": "View full conditions",
     "rates": [
       {
-        "label": "Low season (November through March)",
-        "price": "EUR 125.00 / night"
-      },
-      {
-        "label": "High season (April through October)",
+        "label": "All year round",
         "price": "EUR 145.00 / night"
       }
     ],
@@ -165,7 +163,7 @@
       },
       {
         "title": "Arrival and departure",
-        "body": "Check-in is available between 13:00 and 14:00. Outside these hours, we use a key safe and will welcome you later. Check-out is between 08:00 and 10:30."
+        "body": "Check-in from 13:00, other times by arrangement. Check-out is between 08:00 and 10:30."
       },
       {
         "title": "House rules",
@@ -199,7 +197,7 @@
     ]
   },
   "FooterSection": {
-    "description": "Bed & Breakfast Klein Ockenburgh is a small-scale stay in The Hague, close to the beach, dunes and the city.",
+    "description": "Bed & Breakfast Klein Ockenburgh is a small-scale stay in The Hague, close to Kijkduin beach, the dunes and the city.",
     "contact": {
       "email": "Email: marcelbertram@ziggo.nl",
       "phone": "Phone: +31 6 24 68 37 72",
@@ -214,7 +212,7 @@
         },
         "breakfast": {
           "label": "Breakfast",
-          "value": "Fresh breakfast included every day"
+          "value": "Fresh breakfast included every day, 08:00 - 09:30 (other times by arrangement)"
         },
         "parking": {
           "label": "Parking",
@@ -222,7 +220,7 @@
         },
         "checkIn": {
           "label": "Check-in",
-          "value": "13:00 - 14:00, outside these hours via key safe"
+          "value": "From 13:00, other times by arrangement"
         }
       }
     },
@@ -272,7 +270,7 @@
       {
         "title": "Check-in and check-out",
         "paragraphs": [
-          "Check-in is available between 13:00 and 14:00. Outside these hours, we use a key safe and will welcome you later.",
+          "Check-in is available from 13:00. Would you like to arrive at a different time? We are happy to arrange this with you.",
           "Check-out is available between 08:00 and 10:30."
         ]
       },
@@ -343,7 +341,7 @@
         "title": "Breakfast",
         "paragraphs": [
           "Do you have dietary requirements or allergies? Please let us know no later than 48 hours before arrival so we can take them into account.",
-          "Breakfast is served between 08:00 and 09:30."
+          "Breakfast is served between 08:00 and 09:30. A different time can be arranged on request."
         ]
       },
       {

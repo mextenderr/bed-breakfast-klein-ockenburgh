@@ -18,18 +18,22 @@
   "HomePage": {
     "eyebrow": "Bed & Breakfast",
     "heroTitle": "Klein Ockenburgh",
+    "heroSubtitle": "Bed & Breakfast in Den Haag, op loop- en fietsafstand van strand Kijkduin",
     "ctaPrimary": "Reserveer je verblijf",
     "ctaSecondary": "Ontdek de kamer",
     "scrollIndicator": "Scroll"
   },
   "Metadata": {
-    "title": "Bed & Breakfast Klein Ockenburgh | Officiële website",
-    "description": "Kleinschalige bed & breakfast in Den Haag, vlak bij strand, duinen en de stad. Inclusief ontbijt, gratis parkeren en direct online reserveren.",
+    "title": "B&B Kijkduin Den Haag | Bed & Breakfast Klein Ockenburgh",
+    "description": "Kleinschalige B&B in Den Haag, op loop- en fietsafstand van strand Kijkduin. Overnachting inclusief ontbijt, gratis parkeren, elektrische huurfietsen en direct online reserveren.",
     "imageAlt": "Sfeervolle impressie van Bed & Breakfast Klein Ockenburgh in Den Haag",
     "keywords": [
       "bed and breakfast den haag",
       "b&b den haag",
       "bed and breakfast kijkduin",
+      "b&b kijkduin",
+      "overnachting kijkduin",
+      "overnachten kijkduin",
       "overnachten den haag",
       "overnachting strand den haag",
       "klein ockenburgh",
@@ -40,7 +44,7 @@
     "items": [
       {
         "title": "Prachtige locatie",
-        "description": "Rustig gelegen vlak bij strand, stad en groen."
+        "description": "Rustig gelegen vlak bij strand Kijkduin, de stad en het groen."
       },
       {
         "title": "Inclusief ontbijt",
@@ -69,6 +73,7 @@
     "imageAlt": "Foto van de kamer {index}",
     "highlights": [
       "20 m²",
+      "Dicht bij strand Kijkduin",
       "Privébadkamer",
       "Airconditioning",
       "Gelegen op de begane grond",
@@ -78,18 +83,16 @@
     ]
   },
   "AreaSection": {
-    "title": "Omgeving en bereikbaarheid",
-    "intro": "Onze B&B ligt op een rustige en gunstige locatie in Den Haag. Strand, natuur en het centrum zijn eenvoudig bereikbaar met de fiets, auto of het openbaar vervoer.",
+    "title": "Omgeving: Kijkduin en Den Haag",
+    "intro": "Onze B&B ligt op een rustige en gunstige locatie in Den Haag, op loop- en fietsafstand van strand Kijkduin. Natuur en het centrum zijn eenvoudig bereikbaar met de fiets, auto of het openbaar vervoer.",
     "empty": "Er zijn op dit moment nog geen locaties beschikbaar.",
     "accessibility": {
       "title": "Bereikbaarheid & parkeren",
       "paragraphs": [
         "Onze B&B is goed bereikbaar met zowel de auto als het openbaar vervoer. Voor de B&B hebben wij parkeergelegenheid op eigen terrein, waar u gratis kunt parkeren. Daarnaast is er de mogelijkheid om fietsen veilig bij ons te stallen.",
-        "Wilt u de omgeving per fiets verkennen? Het verdient de aanbeveling om de app FIETSKNOOPPUNT van te voren te downloaden. Daarnaast kunt u eenvoudig fietsen huren bij Orie Rijwielen op 500 meter van onze B&B. Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
+        "Wilt u de omgeving per fiets verkennen? Wij hebben twee elektrische huurfietsen beschikbaar, die u voor de gehele dag tot 24:00 uur kunt gebruiken. Laat het ons gerust weten als u een fiets wilt huren. Het verdient de aanbeveling om de app FIETSKNOOPPUNT van tevoren te downloaden.",
         "Wij denken graag met u mee en geven met plezier tips over mooie routes en handige verbindingen in de omgeving."
-      ],
-      "linkLabel": "Fietsverhuur bij Orie Rijwielen",
-      "linkHref": "mailto:verhuur@orierijwielen.nl"
+      ]
     },
     "places": [
       {
@@ -137,7 +140,7 @@
   "TarievenSection": {
     "title": "Tarieven",
     "intro": "Overzicht van kamerprijzen en verblijfsvoorwaarden.",
-    "ratesTitle": "Seizoensprijzen",
+    "ratesTitle": "Kamerprijs",
     "ratesFootnotePrimary": "Prijzen gelden voor 2 personen en zijn inclusief gratis ontbijt.",
     "ratesFootnoteSecondary": "Bij boeking voor 1 persoon geldt EUR 15,00 korting per nacht.",
     "conditionsTitle": "Boeking in het kort",
@@ -146,11 +149,7 @@
     "conditionsLink": "Bekijk alle voorwaarden",
     "rates": [
       {
-        "label": "Laag seizoen (november t/m maart)",
-        "price": "EUR 125,00 / nacht"
-      },
-      {
-        "label": "Hoog seizoen (april t/m oktober)",
+        "label": "Het hele jaar door",
         "price": "EUR 145,00 / nacht"
       }
     ],
@@ -165,7 +164,7 @@
       },
       {
         "title": "Aankomst en vertrek",
-        "body": "Check-in is mogelijk tussen 13:00 en 14:00 uur, buiten deze tijden werken we met een sleutelkluisje en verwelkomen we u later. Uitchecken tussen 08:00 en 10:30 uur."
+        "body": "Inchecken vanaf 13:00 uur, anders in overleg. Uitchecken tussen 08:00 en 10:30 uur."
       },
       {
         "title": "Huisregels",
@@ -199,7 +198,7 @@
     ]
   },
   "FooterSection": {
-    "description": "Bed & Breakfast Klein Ockenburgh is een kleinschalig verblijf in Den Haag, dicht bij strand, duinen en de stad.",
+    "description": "Bed & Breakfast Klein Ockenburgh is een kleinschalig verblijf in Den Haag, dicht bij strand Kijkduin, de duinen en de stad.",
     "contact": {
       "email": "E-mail: marcelbertram@ziggo.nl",
       "phone": "Telefoon: 06 24 68 37 72",
@@ -214,7 +213,7 @@
         },
         "breakfast": {
           "label": "Ontbijt",
-          "value": "Dagelijks vers ontbijt inbegrepen"
+          "value": "Dagelijks vers ontbijt inbegrepen, 08:00 - 09:30 (anders in overleg)"
         },
         "parking": {
           "label": "Parkeren",
@@ -222,7 +221,7 @@
         },
         "checkIn": {
           "label": "Inchecken",
-          "value": "13:00 - 14:00, daarbuiten via sleutelkluisje"
+          "value": "Vanaf 13:00, anders in overleg"
         }
       }
     },
@@ -272,7 +271,7 @@
       {
         "title": "Check-in en check-out",
         "paragraphs": [
-          "Check-in is mogelijk tussen 13:00 en 14:00 uur. Buiten deze tijden werken we met een sleutelkluisje en verwelkomen we u later.",
+          "Inchecken is mogelijk vanaf 13:00 uur. Wilt u op een ander tijdstip aankomen? Dan maken we graag een afspraak.",
           "Uitchecken is mogelijk tussen 08:00 en 10:30 uur."
         ]
       },
@@ -343,7 +342,7 @@
         "title": "Ontbijt",
         "paragraphs": [
           "Heb je dieetwensen of allergieën? Laat het ons dan graag uiterlijk 48 uur vóór aankomst weten, zodat wij hier rekening mee kunnen houden.",
-          "Het ontbijt wordt geserveerd tussen 08:00 en 09:30 uur."
+          "Het ontbijt wordt geserveerd tussen 08:00 en 09:30 uur. Een ander tijdstip is in overleg mogelijk."
         ]
       },
       {

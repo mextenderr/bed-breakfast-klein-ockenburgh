@@ -96,9 +96,12 @@ export default function HeroHeader() {
             </div>
           </Reveal>
           <Reveal delayMs={500}>
-            <h1 className="mt-5 mb-10 max-w-4xl text-4xl font-semibold tracking-tight sm:text-7xl">
+            <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight sm:text-7xl">
               {t("heroTitle")}
             </h1>
+            <p className="mt-4 mb-10 max-w-2xl text-base text-candlelight/90 sm:text-xl">
+              {t("heroSubtitle")}
+            </p>
           </Reveal>
           <Reveal delayMs={1000}>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 md:justify-start">

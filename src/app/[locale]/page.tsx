@@ -27,7 +27,19 @@ export default async function Home({
     url: new URL(`/${locale}`, siteUrl).toString(),
     image: new URL(siteConfig.image, siteUrl).toString(),
     email: siteConfig.email,
-    areaServed: "The Hague",
+    telephone: "+31624683772",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Jean Monnetpad 66",
+      postalCode: "2553 TW",
+      addressLocality: "Den Haag",
+      addressRegion: "Zuid-Holland",
+      addressCountry: "NL",
+    },
+    priceRange: "€145",
+    checkinTime: "13:00",
+    checkoutTime: "10:30",
+    areaServed: ["Den Haag", "Kijkduin"],
     availableLanguage: siteConfig.locales,
     sameAs: [siteConfig.bedAndBreakfastListingUrl],
     amenityFeature: [
@@ -36,6 +48,7 @@ export default async function Home({
       { "@type": "LocationFeatureSpecification", name: "Free Wi-Fi" },
       { "@type": "LocationFeatureSpecification", name: "Private bathroom" },
       { "@type": "LocationFeatureSpecification", name: "Air conditioning" },
+      { "@type": "LocationFeatureSpecification", name: "Electric bike rental" },
     ],
   };
 
