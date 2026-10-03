@@ -25,7 +25,7 @@
   },
   "Metadata": {
     "title": "B&B near Kijkduin beach, The Hague | Bed & Breakfast Klein Ockenburgh",
-    "description": "Small-scale B&B in The Hague, within walking and cycling distance of Kijkduin beach. Stay includes breakfast, free parking, electric rental bikes and direct online booking.",
+    "description": "Small-scale B&B in The Hague, within walking and cycling distance of Kijkduin beach. Stay includes breakfast, free parking and direct online booking.",
     "imageAlt": "Atmospheric impression of Bed & Breakfast Klein Ockenburgh in The Hague",
     "keywords": [
       "bed and breakfast the hague",
@@ -89,9 +89,11 @@
       "title": "Getting here & parking",
       "paragraphs": [
         "Our B&B is easy to reach both by car and by public transport. We offer free parking on our own property right in front of the B&B. There is also secure space to store bicycles.",
-        "Would you like to explore the area by bike? We have two electric rental bikes available, which you can use for the whole day until midnight. Just let us know if you would like to rent one. We recommend downloading the FIETSKNOOPPUNT app in advance.",
+        "Would you like to explore the area by bike? We recommend downloading the FIETSKNOOPPUNT app in advance. You can also easily rent (electric) bicycles from Orie Rijwielen, just 500 metres from our B&B. For rentals, you can contact them directly by email.",
         "We are happy to help with practical advice and tips for scenic routes and useful local connections."
-      ]
+      ],
+      "linkLabel": "Bike rental at Orie Rijwielen",
+      "linkHref": "mailto:verhuur@orierijwielen.nl"
     },
     "places": [
       {
@@ -163,7 +165,7 @@
       },
       {
         "title": "Arrival and departure",
-        "body": "Check-in from 13:00, other times by arrangement. Check-out is between 08:00 and 10:30."
+        "body": "Check-in from 13:00, other times by arrangement. If we are not at home, you can let yourself in using a key safe and we will welcome you later. Check-out is between 08:00 and 10:30."
       },
       {
         "title": "House rules",
@@ -220,7 +222,7 @@
         },
         "checkIn": {
           "label": "Check-in",
-          "value": "From 13:00, other times by arrangement"
+          "value": "From 13:00, other times by arrangement or via key safe"
         }
       }
     },
@@ -270,7 +272,7 @@
       {
         "title": "Check-in and check-out",
         "paragraphs": [
-          "Check-in is available from 13:00. Would you like to arrive at a different time? We are happy to arrange this with you.",
+          "Check-in is available from 13:00. Would you like to arrive at a different time? We are happy to arrange this with you. If we are not at home, you can let yourself in using a key safe and we will welcome you later.",
           "Check-out is available between 08:00 and 10:30."
         ]
       },

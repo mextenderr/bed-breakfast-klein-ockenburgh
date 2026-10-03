@@ -48,7 +48,6 @@ export default async function Home({
       { "@type": "LocationFeatureSpecification", name: "Free Wi-Fi" },
       { "@type": "LocationFeatureSpecification", name: "Private bathroom" },
       { "@type": "LocationFeatureSpecification", name: "Air conditioning" },
-      { "@type": "LocationFeatureSpecification", name: "Electric bike rental" },
     ],
   };
 

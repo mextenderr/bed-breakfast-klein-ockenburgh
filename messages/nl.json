@@ -25,7 +25,7 @@
   },
   "Metadata": {
     "title": "B&B Kijkduin Den Haag | Bed & Breakfast Klein Ockenburgh",
-    "description": "Kleinschalige B&B in Den Haag, op loop- en fietsafstand van strand Kijkduin. Overnachting inclusief ontbijt, gratis parkeren, elektrische huurfietsen en direct online reserveren.",
+    "description": "Kleinschalige B&B in Den Haag, op loop- en fietsafstand van strand Kijkduin. Overnachting inclusief ontbijt, gratis parkeren en direct online reserveren.",
     "imageAlt": "Sfeervolle impressie van Bed & Breakfast Klein Ockenburgh in Den Haag",
     "keywords": [
       "bed and breakfast den haag",
@@ -90,9 +90,11 @@
       "title": "Bereikbaarheid & parkeren",
       "paragraphs": [
         "Onze B&B is goed bereikbaar met zowel de auto als het openbaar vervoer. Voor de B&B hebben wij parkeergelegenheid op eigen terrein, waar u gratis kunt parkeren. Daarnaast is er de mogelijkheid om fietsen veilig bij ons te stallen.",
-        "Wilt u de omgeving per fiets verkennen? Wij hebben twee elektrische huurfietsen beschikbaar, die u voor de gehele dag tot 24:00 uur kunt gebruiken. Laat het ons gerust weten als u een fiets wilt huren. Het verdient de aanbeveling om de app FIETSKNOOPPUNT van tevoren te downloaden.",
+        "Wilt u de omgeving per fiets verkennen? Het verdient de aanbeveling om de app FIETSKNOOPPUNT van tevoren te downloaden. Daarnaast kunt u eenvoudig (elektrische) fietsen huren bij Orie Rijwielen op 500 meter van onze B&B. Voor verhuur kunt u rechtstreeks contact opnemen via e-mail.",
         "Wij denken graag met u mee en geven met plezier tips over mooie routes en handige verbindingen in de omgeving."
-      ]
+      ],
+      "linkLabel": "Fietsverhuur bij Orie Rijwielen",
+      "linkHref": "mailto:verhuur@orierijwielen.nl"
     },
     "places": [
       {
@@ -164,7 +166,7 @@
       },
       {
         "title": "Aankomst en vertrek",
-        "body": "Inchecken vanaf 13:00 uur, anders in overleg. Uitchecken tussen 08:00 en 10:30 uur."
+        "body": "Inchecken vanaf 13:00 uur, anders in overleg. Zijn wij niet aanwezig, dan kunt u via een sleutelkluisje naar binnen en verwelkomen wij u later. Uitchecken tussen 08:00 en 10:30 uur."
       },
       {
         "title": "Huisregels",
@@ -221,7 +223,7 @@
         },
         "checkIn": {
           "label": "Inchecken",
-          "value": "Vanaf 13:00, anders in overleg"
+          "value": "Vanaf 13:00, anders in overleg of via sleutelkluisje"
         }
       }
     },
@@ -271,7 +273,7 @@
       {
         "title": "Check-in en check-out",
         "paragraphs": [
-          "Inchecken is mogelijk vanaf 13:00 uur. Wilt u op een ander tijdstip aankomen? Dan maken we graag een afspraak.",
+          "Inchecken is mogelijk vanaf 13:00 uur. Wilt u op een ander tijdstip aankomen? Dan maken we graag een afspraak. Zijn wij niet aanwezig, dan kunt u via een sleutelkluisje naar binnen en verwelkomen wij u later.",
           "Uitchecken is mogelijk tussen 08:00 en 10:30 uur."
         ]
       },
